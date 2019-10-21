@@ -25,6 +25,17 @@
 |- [] 23. Merge k Sorted Lists|Medium|Backtracking|||
 
 
+|- [X] 38. Valid Sudoku|Medium||||
+|- [] 37. Sudoku Solver|Hard||||
+|- [X] 38. Count and Say|Medium||||
+|- [X] 39. Combination Sum|Medium|Backtracking|||
+|- [X] 40. Combination Sum II|Medium|Backtracking|||
+|- [X] 41. First Missing Positives|Hard||||
+|- [] 42. Trapping Rain Water|Hard|Two-pointers|Stack||
+
+
+
+
 
 
 Note:
