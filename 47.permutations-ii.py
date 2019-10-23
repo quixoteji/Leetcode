@@ -1,3 +1,10 @@
+#
+# @lc app=leetcode id=47 lang=python3
+#
+# [47] Permutations II
+#
+
+# @lc code=start
 class Solution:
     def dfs(self, ans, visited, curr, nums) :
         if len(curr) == len(nums) :
@@ -12,12 +19,13 @@ class Solution:
             curr.pop()
             visited.pop()
 
-    def permuteUnique(self, nums) :
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         ans = []
         visited = []
         curr = []
         self.dfs(ans, visited, curr, nums)
         return ans
-A = Solution()
-print(A.permuteUnique([1,1,2]))
+        
+# @lc code=end
+
