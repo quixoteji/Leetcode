@@ -1,23 +1,16 @@
 class Solution:
-    def dfs(self, ans, visited, curr, nums) :
-        if len(curr) == len(nums) :
-            ans.append(curr[:])
-            return
-        for i in range(len(nums)) :
-            if i > 0 and nums[i] == nums[i-1] : continue
-            if i in visited : continue
-            visited.append(i)
-            curr.append(nums[i])
-            self.dfs(ans, visited, curr, nums)
-            curr.pop()
-            visited.pop()
-
-    def permuteUnique(self, nums) :
-        nums.sort()
-        ans = []
-        visited = []
-        curr = []
-        self.dfs(ans, visited, curr, nums)
-        return ans
+    def maxSubArray(self, nums):
+        l, r, maxVal = 0, len(nums), float('-inf')
+        temp = nums[:]
+        while l < r :
+            maxVal = max(sum(temp), maxVal)
+            if nums[l] < nums[r]:
+                l += 1
+                temp = nums[l:r]
+            else:
+                r -= 1
+                temp = nums[l:r]
+                
+        return maxVal
 A = Solution()
-print(A.permuteUnique([1,1,2]))
+print(A.maxSubArray([-2,1]))

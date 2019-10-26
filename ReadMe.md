@@ -50,7 +50,18 @@
 |- [] 48. Rotate Image|Medium|Two-pointers|Stack||
 |- [X] 49. Group Anagrams|Medium||||
 |- [X] 50. Pow(x, n)|Medium|Math|Binary-search||
-|- [] 51. Trapping Rain Water|Hard|Two-pointers|Stack||
+|- [X] 51. N Queens|Hard|Backtracking|||
+|- [X] 52. N Queens II|Hard|Backtracking|||
+|- [] 53. Maximum Subarray|Medium||||
+|- [] 58. Length of Last Word|Medium||||
+|- [] 59. Spiral Matrix II|Medium||||
+|- [X] 67. Add Binary|Easy||||
+|- [] 68. Text Justification|Hard|Greedy|||
+|- [X] 100. Same Tree|Easy||||
+|- [X] 101. Symmetric Tree|Easy||||
+|- [] 101. Binary Tree Level Order Traversal|Medium||||
+|- [] 498. Diagonal Travers|Medium||||
+|- [X] 500. Keyboard Row|Easy|Hashtable|||
 
 
 
@@ -61,3 +72,4 @@ Note:
 - [] Quick Select
 - [] Quick Sort
 - [] Difference between Backtracking and Depth First Search (DFS)
+- [] Greedy
