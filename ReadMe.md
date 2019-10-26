@@ -59,7 +59,14 @@
 |- [] 68. Text Justification|Hard|Greedy|||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
-|- [] 101. Binary Tree Level Order Traversal|Medium||||
+|- [X] 102. Binary Tree Level Order Traversal|Medium||||
+|- [X] 103. Binary Tree Zigzag Level Order Traversal|Medium||||
+|- [X] 104. Maximum Depth of Binary Tree|Easy||||
+|- [X] 105. Construct Binary Tree from Preorder and Inorder Traversal|Medium|DFS|||
+|- [X] 106. Construct Binary Tree from inorder and postorder Traversal|Medium|DFS|||
+|- [X] 107. Binary Tree Level Order Traversal II|Medium|BFS|||
+
+
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 
