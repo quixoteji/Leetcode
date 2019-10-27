@@ -56,7 +56,8 @@
 |- [] 58. Length of Last Word|Medium||||
 |- [] 59. Spiral Matrix II|Medium||||
 |- [X] 67. Add Binary|Easy||||
-|- [] 68. Text Justification|Hard|Greedy|||
+|- [] 68. Text Justification|Medium|Backtracking|||
+|- [] 79. Word Search|Hard|Greedy|||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
 |- [X] 102. Binary Tree Level Order Traversal|Medium||||
@@ -65,8 +66,13 @@
 |- [X] 105. Construct Binary Tree from Preorder and Inorder Traversal|Medium|DFS|||
 |- [X] 106. Construct Binary Tree from inorder and postorder Traversal|Medium|DFS|||
 |- [X] 107. Binary Tree Level Order Traversal II|Medium|BFS|||
-
-
+|- [X] 108. Convert Sorted Array to Binary Search Tree|Easy|DFS|||
+|- [X] 109. Convert Convert Sorted List to Binary Search Tree|Medium|DFS|||
+|- [X] 136. Single Number|Easy||||
+|- [X] 137. Single Number II|Medium||||
+|- [] 138. Copy List with Random Pointer|Medium||||
+|- [] 139. Word Break|Medium||||
+|- [] 283. Mover Zerods|Medium|Two-pointers|||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 
