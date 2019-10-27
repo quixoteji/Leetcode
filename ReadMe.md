@@ -68,6 +68,9 @@
 |- [X] 107. Binary Tree Level Order Traversal II|Medium|BFS|||
 |- [X] 108. Convert Sorted Array to Binary Search Tree|Easy|DFS|||
 |- [X] 109. Convert Convert Sorted List to Binary Search Tree|Medium|DFS|||
+|- [X] 110. Balanced Binary Tree|Easy|DFS|||
+|- [X] 111. Minimum Depth of Binary Tree|Easy|DFS|||
+|- [] 112. Path Sum|Easy|DFS|||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
