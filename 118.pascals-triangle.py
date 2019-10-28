@@ -1,5 +1,12 @@
+#
+# @lc app=leetcode id=118 lang=python3
+#
+# [118] Pascal's Triangle
+#
+
+# @lc code=start
 class Solution:
-    def generate(self, numRows):
+    def generate(self, numRows: int) -> List[List[int]]:
         ans, n = [], 1
         while n <= numRows:
             curr = [1 for i in range(n)]
@@ -10,7 +17,6 @@ class Solution:
             ans.append(curr[:])
             n += 1
         return ans
-# -10,-3,0,5,9
+        
+# @lc code=end
 
-A = Solution()
-print(A.generate(5))

@@ -70,7 +70,15 @@
 |- [X] 109. Convert Convert Sorted List to Binary Search Tree|Medium|DFS|||
 |- [X] 110. Balanced Binary Tree|Easy|DFS|||
 |- [X] 111. Minimum Depth of Binary Tree|Easy|DFS|||
-|- [] 112. Path Sum|Easy|DFS|||
+|- [X] 112. Path Sum|Easy|DFS|||
+|- [X] 113. Path Sum II|Medium|DFS|||
+|- [X] 114. Flatten Binary Tree to LinkedList|Medium|DFS|||
+|- [] 115. Distinct Subsequences|Hard|Dynamic-programming|||
+|- [X] 116. Populating Next Right Pointers in Each Node|Medium|DFS|||
+|- [X] 117. Populating Next Right Pointers in Each Node II|Medium|DFS|||
+|- [X] 118. Pascal's Triangle|Easy|Array|||
+|- [X] 119. Pascal's Triangle II|Easy|Array|||
+|- [] 120. Triangle|Medium|DFS|||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
@@ -89,3 +97,4 @@ Note:
 - [] Quick Sort
 - [] Difference between Backtracking and Depth First Search (DFS)
 - [] Greedy
+
