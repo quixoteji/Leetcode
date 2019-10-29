@@ -57,7 +57,8 @@
 |- [] 59. Spiral Matrix II|Medium||||
 |- [X] 67. Add Binary|Easy||||
 |- [] 68. Text Justification|Medium|Backtracking|||
-|- [] 79. Word Search|Hard|Greedy|||
+|- [] 79. Word Search|Medium|BFS|||
+|- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
 |- [X] 102. Binary Tree Level Order Traversal|Medium||||
@@ -79,11 +80,15 @@
 |- [X] 118. Pascal's Triangle|Easy|Array|||
 |- [X] 119. Pascal's Triangle II|Easy|Array|||
 |- [X] 120. Triangle|Medium|DFS|DP||
-|- [] 121. Best Time to Buy and Sell Stock|Medium|DFS|||
+|- [] 121. Best Time to Buy and Sell Stock|Easy|Array|Dynamic-programming||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
-|- [] 139. Word Break|Medium||||
+|- [X] 139. Word Break|Medium||||
+|- [X] 140. Word Break II|Medium||||
+|- [X] 141. Linked List Cycle|Easy|Two-pointers|||
+|- [X] 144. Binary Tree Preorder Traversal|Medium||||
+|- [X] 145. Binary Tree Postorder Traversal|Medium||||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
