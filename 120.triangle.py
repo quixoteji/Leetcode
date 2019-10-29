@@ -15,10 +15,18 @@ class Solution:
         self.dfs(ans, curr + triangle[d - 1][i + 1], d + 1, i + 1, triangle)
 
     def minimumTotal(self, triangle: List[List[int]]) -> int:
-        if len(triangle) == 0 : return 0 
-        ans = []
-        self.dfs(ans, triangle[0][0], 1, 0, triangle)
-        return min(ans)
+        if not triangle: return 0
+        
+        dp = [triangle[0][0]]
+        
+        for i in range(1, len(triangle)):
+            level = [dp[0]+triangle[i][0]]
+            for j in range(1, i):
+                level.append(min(dp[j], dp[j-1]) + triangle[i][j])
+            level.append(dp[-1]+triangle[i][-1])
+            dp = level
+                
+        return min(dp)
         
 # @lc code=end
 

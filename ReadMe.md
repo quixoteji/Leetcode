@@ -78,7 +78,8 @@
 |- [X] 117. Populating Next Right Pointers in Each Node II|Medium|DFS|||
 |- [X] 118. Pascal's Triangle|Easy|Array|||
 |- [X] 119. Pascal's Triangle II|Easy|Array|||
-|- [] 120. Triangle|Medium|DFS|||
+|- [X] 120. Triangle|Medium|DFS|DP||
+|- [] 121. Best Time to Buy and Sell Stock|Medium|DFS|||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
