@@ -89,6 +89,7 @@
 |- [X] 141. Linked List Cycle|Easy|Two-pointers|||
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
+|- [X] 149. Max Points on a Line|Hard||||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||

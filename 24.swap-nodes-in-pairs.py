@@ -12,18 +12,28 @@
 #         self.next = None
 
 class Solution:
-    def swapPairs(self, head: ListNode) -> ListNode:
-        if not head or not head.next: return head
+    def sol1(self, head) :
+        if not head or not head.next : return head
         dummy = prev = ListNode(0)
         dummy.next = head
-        while prev and prev.next :
+        while prev.next and prev.next.next : 
             temp = prev.next.next
             prev.next.next = temp.next
             temp.next = prev.next
             prev.next = temp
-            prev = prev.next.next
-        
+            prev = temp.next
         return dummy.next
+
+    def sol2(self, head) :
+        if not head or not head.next : return head
+        temp = head.next
+        head.next = self.sol2(head.next.next)
+        temp.next = head
+        return temp
+
+    def swapPairs(self, head: ListNode) -> ListNode:
+        # return self.sol1(head)
+        return self.sol2(head)
             
 
 
