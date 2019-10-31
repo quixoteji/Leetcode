@@ -90,6 +90,13 @@
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
 |- [X] 149. Max Points on a Line|Hard||||
+|- [X] 242. Valid Anagram|Easy||||
+|- [X] 257. Binary Tree Paths|Easy||||
+|- [X] 258. Add Digits|Easy||||
+|- [X] 259. 3Sum Smaller|Medium|Two-pointers|||
+|- [X] 260. Single Number III|Medium||||
+|- [X] 263. Ugly Number|Easy||||
+|- [X] 264. Ugly Number II|Medium|Dynamic-programming|Heap||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
