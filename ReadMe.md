@@ -97,6 +97,9 @@
 |- [X] 260. Single Number III|Medium||||
 |- [X] 263. Ugly Number|Easy||||
 |- [X] 264. Ugly Number II|Medium|Dynamic-programming|Heap||
+|- [] 265. Paint House II|Medium|Dynamic-programming|||
+|- [X] 266. Palindrome Permutation|Easy||||
+|- [X] 266. Palindrome Permutation II|Medium|Backtracking|||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
