@@ -99,8 +99,18 @@
 |- [X] 264. Ugly Number II|Medium|Dynamic-programming|Heap||
 |- [] 265. Paint House II|Medium|Dynamic-programming|||
 |- [X] 266. Palindrome Permutation|Easy||||
-|- [X] 266. Palindrome Permutation II|Medium|Backtracking|||
+|- [] 267. Palindrome Permutation II|Medium|Backtracking|||
+|- [X] 268. Missing Number|Easy||||
+|- [] 269. Alien Dictionary|Hard||||
+|- [X] 270. Closest Binary Search Tree Value|Easy|BFS|DFS||
+|- [] 271. Encode and Decode Strings|Medium||||
+|- [] 272. Closest Binary Search Tree Value II|Medium||||
+|- [] 273. Integer to English|Hard||||
+|- [X] 274. H-Index|Medium|Hashmap|Sorted||
+|- [] 275. H-Index|Medium||||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
+|- [] 400. Nth Digit|Medium||||
+|- [] 401. Binary Watch|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 

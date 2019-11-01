@@ -1,18 +1,18 @@
 from heapq import heappush, heappop, heapify
 class Solution:
-    def sol2(self, n) :
-        i2 = i3 = i5 = 0
-        nums = [1]
-        for i in range(n):
-            curr = [nums[i2] * 2, nums[i3] * 3, nums[i5] * 5]
-            ugly = min(curr)
-            nums.append(ugly)
-            if nums[i2] == ugly: i2 += 1
-            if nums[i3] == ugly * 3: i3 += 1
-            if nums[i5] == ugly * 5: i5 += 1
-        print(nums)
-        return nums[-1]
+    def sol2(self, nums) :
+        if not nums: return 0
+        p, k = 1, 0
+        for i in range(1, len(nums)):
+            if nums[i] == nums[i - 1] : 
+                k += 1
+                if k < 2 : p += 1
+            else :
+                k = 0
+                nums[p] = nums[i]
+                p += 1
+        return p
 # -10,-3,0,5,9
 
 A = Solution()
-print(A.sol2(19))
+print(A.sol2([0,0,1,1,1,1,2,3,3]))
