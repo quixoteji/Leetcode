@@ -113,6 +113,9 @@
 |- [] 401. Binary Watch|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
+|---|---|---|---|---|
+|- [] 684. Redundant Connection|Union-find Set|||
+|- [] 737. Sentence Similarity II|Union-find Set|||
 
 
 
