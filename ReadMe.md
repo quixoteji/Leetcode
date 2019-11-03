@@ -90,6 +90,7 @@
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
 |- [X] 149. Max Points on a Line|Hard||||
+|- [X] 200. Number of Islands|Medium|Union-find Set|||
 |- [X] 242. Valid Anagram|Easy||||
 |- [X] 257. Binary Tree Paths|Easy||||
 |- [X] 258. Add Digits|Easy||||
@@ -109,13 +110,16 @@
 |- [X] 274. H-Index|Medium|Hashmap|Sorted||
 |- [] 275. H-Index|Medium||||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
+|- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [] 401. Binary Watch|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 |---|---|---|---|---|
-|- [] 684. Redundant Connection|Union-find Set|||
-|- [] 737. Sentence Similarity II|Union-find Set|||
+|- [X] 547. Friend Circle|Medium|Union-find Set|||
+|- [X] 684. Redundant Connection|Medium|Union-find Set|||
+|- [] 685. Redundant Connection II|Hard|Union-find Set|||
+|- [X] 737. Sentence Similarity II|Medium||Union-find Set|||
 
 
 

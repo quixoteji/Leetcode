@@ -15,7 +15,7 @@ class UFset :
         if self._ranks[px] < self._ranks[py] : 
             self._parents[px] = py
         elif self._ranks[px] > self._ranks[py] :
-            self._parents[px] = px
+            self._parents[py] = px
         else :
             self._parents[py] = px
             self._ranks[px] += 1

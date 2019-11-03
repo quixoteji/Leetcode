@@ -17,6 +17,8 @@ Two Key optimizations :
 1. Path compression : make tree flat
 2. Union by rank : merge low rank tree to high rank one
 
+## Union-find and BFS/DFS
+when the data is very large, union find set is more efficient, however, union-find set can only tell wheterh the two components are connected or not, but cannnot give the path.
 ```python
 class UnionFindSet():
     def __init__(self, n) :

@@ -1,3 +1,10 @@
+#
+# @lc app=leetcode id=200 lang=python3
+#
+# [200] Number of Islands
+#
+
+# @lc code=start
 class union_find:
     def __init__(self, n) :
         self._parents = [i for i in range(n)]
@@ -17,21 +24,19 @@ class union_find:
         return True
 
 class Solution:
-    def numIslands(self, grid) :
+    def numIslands(self, grid: List[List[str]]) -> int:
         # if len(grid) == 1 and grid[0][0] == "0" : return 0
         
-        ufset = union_find(len(grid) * len(grid[0]))
+        ufset = union_find(len(grid))
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == "1" : 
                     ufset.union(i, j)
-        print(ufset._parents)
+        
         hset = set()
         for parent in ufset._parents:
             hset.add(ufset.find(parent))
         return len(hset)
+        
+# @lc code=end
 
-# -10,-3,0,5,9
-
-A = Solution()
-print(A.numIslands([["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]))
