@@ -89,6 +89,10 @@
 |- [X] 141. Linked List Cycle|Easy|Two-pointers|||
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
+|- [X] 168. Excel Sheet Column Title|Easy||||
+|- [X] 169. Majority Element|Easy||||
+|- [] 170. Two Sum III - Data structure design|Easy||||
+|- [] 171. Excel Sheet Column Number|Easy||||
 |- [X] 149. Max Points on a Line|Hard||||
 |- [X] 200. Number of Islands|Medium|Union-find Set|||
 |- [X] 242. Valid Anagram|Easy||||
