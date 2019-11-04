@@ -89,13 +89,18 @@
 |- [X] 141. Linked List Cycle|Easy|Two-pointers|||
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
+|- [] 149. Max Points on a Line|Hard||||
 |- [X] 168. Excel Sheet Column Title|Easy||||
 |- [X] 169. Majority Element|Easy||||
-|- [] 170. Two Sum III - Data structure design|Easy||||
-|- [] 171. Excel Sheet Column Number|Easy||||
-|- [X] 149. Max Points on a Line|Hard||||
+|- [X] 170. Two Sum III - Data structure design|Easy||||
+|- [X] 171. Excel Sheet Column Number|Easy||||
 |- [X] 200. Number of Islands|Medium|Union-find Set|||
+|- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
+|- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
+|- [X] 212. Word Search II |Hard|Trie|Backtracking||
+|- [X] 231. Power of Two|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
+|- [] 246. Strobogrammatic Number|Easy||||
 |- [X] 257. Binary Tree Paths|Easy||||
 |- [X] 258. Add Digits|Easy||||
 |- [X] 259. 3Sum Smaller|Medium|Two-pointers|||
@@ -114,6 +119,9 @@
 |- [X] 274. H-Index|Medium|Hashmap|Sorted||
 |- [] 275. H-Index|Medium||||
 |- [] 283. Mover Zerods|Medium|Two-pointers|||
+|- [X] 326. Power of Three|Easy||||
+|- [] 336. Palindrome Pairs|Hard||||
+|- [] 342. Power of Four|Easy|Bit-manipulation|||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [] 401. Binary Watch|Easy||||

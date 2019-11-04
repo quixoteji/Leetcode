@@ -8,8 +8,9 @@
 class Solution:
     def titleToNumber(self, s: str) -> int:
         num = 0
-        for char in s[::-1] :
-            num += num * 26 + ord(char) - ord("A") + 1
+        for char in s :
+            val = ord(char) - ord("A") + 1
+            num = num * 26 + val
         return num
 # @lc code=end
 

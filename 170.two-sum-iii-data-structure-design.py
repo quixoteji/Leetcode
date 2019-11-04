@@ -11,24 +11,26 @@ class TwoSum:
         """
         Initialize your data structure here.
         """
-        self.set = set()
-        self.temp = 0
-        self.first = True
+        self._nums = list() 
         
 
     def add(self, number: int) -> None:
         """
         Add the number to an internal data structure..
         """
-        if self.first:
-            self.temp 
-            
+        self._nums.append(number)
+
 
 
     def find(self, value: int) -> bool:
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         """
+        hashset = set()
+        for num in self._nums :
+            if num in hashset : return True
+            else : hashset.add(value - num)
+        return False
         
         
 

@@ -25,18 +25,25 @@ class union_find:
 
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        # if len(grid) == 1 and grid[0][0] == "0" : return 0
-        
-        ufset = union_find(len(grid))
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
+        if not grid : return 0
+        r, c = len(grid), len(grid[0])
+        ufset = union_find(r * c)
+        # print(ufset._parents)
+        for i in range(r):
+            for j in range(c):
                 if grid[i][j] == "1" : 
-                    ufset.union(i, j)
+                    if i+1 < r and grid[i+1][j] == "1" : ufset.union(i*c+j, (i+1)*c+j)
+                    if i-1 >= 0 and grid[i-1][j] == "1" : ufset.union(i*c+j, (i-1)*c+j)
+                    if j+1 < c and grid[i][j+1] == "1" : ufset.union(i*c+j, i*c+j+1)
+                    if j-1 >=0 and grid[i][j-1] == "1" : ufset.union(i*c+j, i*c+j-1)
+                if grid[i][j] == "0" :
+                    ufset._parents[i*c+j] = -1
+        print(ufset._parents)
         
         hset = set()
         for parent in ufset._parents:
-            hset.add(ufset.find(parent))
+            if parent != -1 :
+                hset.add(ufset.find(parent))
         return len(hset)
-        
 # @lc code=end
 
