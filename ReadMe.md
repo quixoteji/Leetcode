@@ -98,6 +98,8 @@
 |- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||
+|- [X] 217. Contains Duplicate|Easy||||
+|- [] 219. Contains Duplicate II|Easy||||
 |- [X] 231. Power of Two|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
 |- [] 246. Strobogrammatic Number|Easy||||
