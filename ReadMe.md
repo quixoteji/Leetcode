@@ -86,7 +86,8 @@
 |- [X] 119. Pascal's Triangle II|Easy|Array|||
 |- [X] 120. Triangle|Medium|DFS|DP||
 |- [X] 121. Best Time to Buy and Sell Stock|Easy|Array|||
-|- [X] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
+|- [] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
+|- [X] 125. Valid Palindrome|Easy||||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
@@ -96,11 +97,20 @@
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
 |- [] 149. Max Points on a Line|Hard||||
+|- [X] 155. Min Stack|Easy||||
+|- [] 157. Read N Characters Given Read4|Easy||||
+|- [] 160. Intersection of Two Linked Lists|Easy||||
 |- [X] 168. Excel Sheet Column Title|Easy||||
 |- [X] 169. Majority Element|Easy||||
 |- [X] 170. Two Sum III - Data structure design|Easy||||
 |- [X] 171. Excel Sheet Column Number|Easy||||
+|- [X] 171. Factorial Trailing Zeroes|Easy||||
+|- [X] 189. Rotate Array|Easy||||
+|- [X] 190. Reverse Bits|Easy||||
+|- [X] 191. Number of 1 Bits|Easy||||
+|- [X] 198. House Robber|Easy||||
 |- [X] 200. Number of Islands|Medium|Union-find Set|||
+|- [X] 202. Happy Number|Easy||||
 |- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||

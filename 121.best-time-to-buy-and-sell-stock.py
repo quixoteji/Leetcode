@@ -33,7 +33,16 @@ class Solution:
         return profit[-1]
 
     def maxProfit(self, prices: List[int]) -> int:
-        
+        if len(prices) < 2 : return 0
+
+        profit = [prices[i] - prices[i - 1] for i in range(1, len(prices))]
+        maxprofit = [profit[0] for i in range(len(profit))]
+        for i in range(1, len(profit)) :
+            if maxprofit[i - 1] > 0 :
+                maxprofit[i] = maxprofit[i - 1] + profit[i]
+            else :
+                maxprofit[i] = profit[i]
+        return max(maxprofit) if max(maxprofit) > 0 else 0
 
         
 # @lc code=end
