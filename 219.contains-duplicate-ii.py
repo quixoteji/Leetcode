@@ -7,12 +7,11 @@
 # @lc code=start
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        hashmap = {}
+        hashmap = dict()
         for i, num in enumerate(nums):
-            if num in hashmap : 
-                if i - hashmap[num] > k + 1: return False
-            hashmap[num] = i
-        return True
+            if num in hashmap and i - hashmap[num] <= k : return True
+            else : hashmap[num] = i
+        return False
 
         
 # @lc code=end

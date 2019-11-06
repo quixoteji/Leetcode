@@ -59,6 +59,7 @@
 |- [] 68. Text Justification|Medium|Backtracking|||
 |- [] 79. Word Search|Medium|BFS|||
 |- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
+|- [] 98. Validate Binary Search Tree|Medium|Two-pointers|||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
 |- [X] 102. Binary Tree Level Order Traversal|Medium||||
@@ -99,8 +100,11 @@
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||
 |- [X] 217. Contains Duplicate|Easy||||
-|- [] 219. Contains Duplicate II|Easy||||
+|- [X] 219. Contains Duplicate II|Medium||||
+|- [X] 220. Contains Duplicate III|Medium||||
+|- [X] 222. Count Complete Tree Node|Medium||||
 |- [X] 231. Power of Two|Easy||||
+|- [X] 234. Palindrome Linked List|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
 |- [] 246. Strobogrammatic Number|Easy||||
 |- [X] 257. Binary Tree Paths|Easy||||
