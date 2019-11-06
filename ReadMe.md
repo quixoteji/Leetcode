@@ -57,8 +57,12 @@
 |- [] 59. Spiral Matrix II|Medium||||
 |- [X] 67. Add Binary|Easy||||
 |- [] 68. Text Justification|Medium|Backtracking|||
+|- [X] 69. Sqrt(x)|Easy||||
+|- [X] 70. Climbing Stairs|Easy|Dynamic-programming|||
 |- [] 79. Word Search|Medium|BFS|||
 |- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
+|- [X] 83. Remove Duplicates from Sorted List|Easy||||
+|- [X] 88. Merge Sorted Array|Easy||||
 |- [] 98. Validate Binary Search Tree|Medium|Two-pointers|||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
@@ -81,7 +85,8 @@
 |- [X] 118. Pascal's Triangle|Easy|Array|||
 |- [X] 119. Pascal's Triangle II|Easy|Array|||
 |- [X] 120. Triangle|Medium|DFS|DP||
-|- [] 121. Best Time to Buy and Sell Stock|Easy|Array|Dynamic-programming||
+|- [X] 121. Best Time to Buy and Sell Stock|Easy|Array|||
+|- [X] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||

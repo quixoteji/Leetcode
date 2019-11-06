@@ -7,19 +7,14 @@
 # @lc code=start
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        if len(nums) <= 1 : return sum(nums)
-        l, r, maxVal = 0, len(nums) - 1, float('-inf')
-        temp = nums[:]
-        while l <= r :
-            maxVal = max(sum(temp), maxVal)
-            if nums[l] < nums[r]:
-                l += 1
-                temp = nums[l : r + 1]
-            else:
-                r -= 1
-                temp = nums[l : r + 1]
-                
-        return maxVal
+        n = len(nums)
+        curr_sum = max_sum = nums[0]
+
+        for i in range(1, n):
+            curr_sum = max(nums[i], curr_sum + nums[i])
+            max_sum = max(max_sum, curr_sum)
+            
+        return max_sum
         
 # @lc code=end
 
