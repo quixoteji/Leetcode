@@ -111,6 +111,10 @@
 |- [X] 198. House Robber|Easy||||
 |- [X] 200. Number of Islands|Medium|Union-find Set|||
 |- [X] 202. Happy Number|Easy||||
+|- [X] 203. Removed Linked List Element|Easy||||
+|- [X] 204. Count Primes|Easy||||
+|- [X] 205. Isomorphic Strings|Easy||||
+|- [] 206. Reverse Linked List|Easy||||
 |- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||
@@ -118,7 +122,11 @@
 |- [X] 219. Contains Duplicate II|Medium||||
 |- [X] 220. Contains Duplicate III|Medium||||
 |- [X] 222. Count Complete Tree Node|Medium||||
+|- [] 225. Implement Stack using Queues|Easy||||
+|- [X] 226. Invert Binary Tree|Easy||||
 |- [X] 231. Power of Two|Easy||||
+|- [] 235. Lowest Common Ancestor of a Binary Tree|Easy||||
+|- [] 237. Delete Node in a Linked List|Easy||||
 |- [X] 234. Palindrome Linked List|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
 |- [] 246. Strobogrammatic Number|Easy||||
