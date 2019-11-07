@@ -156,8 +156,15 @@
 |- [] 401. Binary Watch|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
-|---|---|---|---|---|
+|- [X] 501. Find Mode in Binary Search Tree|Easy|Hashtable|||
+|- [X] 504. Base 7|Easy||||
+|- [] 506. Relative Ranks|Easy||||
+|- [X] 507. Perfect Number|Easy||||
+|- [X] 509. Fibonacci Number|Easy||||
+|- [X] 520. Detect Capital|Easy||||
 |- [X] 547. Friend Circle|Medium|Union-find Set|||
+|- [X] 593. Valid Square|Medium||||
+|---|---|---|---|---|
 |- [X] 684. Redundant Connection|Medium|Union-find Set|||
 |- [] 685. Redundant Connection II|Hard|Union-find Set|||
 |- [X] 737. Sentence Similarity II|Medium||Union-find Set|||
