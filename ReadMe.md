@@ -162,8 +162,28 @@
 |- [X] 507. Perfect Number|Easy||||
 |- [X] 509. Fibonacci Number|Easy||||
 |- [X] 520. Detect Capital|Easy||||
+|- [] 530. Minimum Absolute Difference in BST|Easy||||
+|- [X] 532. K-diff Pairs in an Array|Easy||||
+|- [] 538. Convert BST To Greater Tree|Easy||||
+|- [X] 541. Reverse String II|Easy||||
+|- [] 543. Diameter of Binary Tree|Easy||||
 |- [X] 547. Friend Circle|Medium|Union-find Set|||
+|- [X] 551. Student Attendance Record I|Easy||||
+|- [X] 557. Reverse Words in a String III|Easy||||
+|- [] 558. Quad Tree Intersection|Easy||||
+|- [X] 559. Maximum Depth of N-ary Tree|Easy||||
+|- [X] 561. Array Partition I|Easy||||
+|- [] 563. Binary Tree Tilt|Easy||||
+|- [X] 566. Reshape the Matrix|Easy||||
+|- [] 572. Subtree of Another Tree|Easy||||
+|- [X] 575. Distribute Candies|Easy||||
+|- [X] 581. Shortest Unsorted Continuous Subarray|Easy||||
+|- [X] 589. N-ary Tree Preorder Traversal|Easy||||
+|- [X] 590. N-ary Tree Postorder Traversal|Easy||||
 |- [X] 593. Valid Square|Medium||||
+|- [X] 594. Longest Harmonious Subsequence|Easy||||
+|- [] 598. Range Addition II|Easy||||
+|- [X] 599. Minimum Index Sum of Two Lists|Easy||||
 |---|---|---|---|---|
 |- [X] 684. Redundant Connection|Medium|Union-find Set|||
 |- [] 685. Redundant Connection II|Hard|Union-find Set|||
