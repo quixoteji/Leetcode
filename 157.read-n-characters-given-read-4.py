@@ -26,10 +26,26 @@ class Solution:
         :type n: Number of characters to read (int)
         :rtype: The number of actual characters read (int)
         """
-        k = 0
-        while n > 0:
-            
-        return 
+        readBytes = 0
+        while (readBytes < n):
+            tmpBuf = [' '] * 4
+            tmpBytes = read4(tmpBuf)
+            # print ("tmpBytes = ", tmpBytes)
+            # print ("tmpBuf = ", tmpBuf)
+
+            for idx in range(tmpBytes):
+                if (readBytes < n):
+                    buf[readBytes] = tmpBuf[idx]
+                    readBytes += 1
+            # print ("readBytes = ", readBytes)
+            # print ("buf = ", buf)
+
+            if (tmpBytes < 4):
+                print("1 break")
+                break
+
+        # print ("after while buf = ", buf)
+        return readBytes
         
 # @lc code=end
 

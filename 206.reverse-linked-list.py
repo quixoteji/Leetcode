@@ -16,11 +16,11 @@ class Solution:
         if not head or not head.next : return head
         dummy = prev = ListNode(0)
         dummy.next = head
-        while head and head.next:
-            node = head.next
-            head.next = node.next
-            node.next = head
-            prev.next = node
+        while head :
+            nextNode = head.next
+            dummy.next = nextNode
+            head = head.next
+            
         return dummy.next
         
 # @lc code=end

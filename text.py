@@ -1,17 +1,27 @@
 import collections
 
 class Solution:
-    def findLHS(self, nums) :
-        if not nums: return 0
-        counter = collections.Counter(nums)
-        keys = sorted(counter.keys())
-        ans = []
-        for i in range(len(keys)) :
-            if i > 0 and keys[i] - keys[i - 1] == 1:
-                print(keys[i])
-                ans.append(counter[i] + counter[i - 1])
-        print(ans)
-        return max(ans)
+    def abbr2word(self, abbr) :
+        s = ''
+        num = ''
+        for i, char in enumerate(abbr) :
+            if not char.isdigit() : 
+                if num : s += int(num) * '.'
+                s += char
+                num = ''
+            else : 
+                num += char
+        if num : s += int(num) * '.'
+        return s
+
+    def validWordAbbreviation(self, word, abbr):
+        _word = self.abbr2word(abbr)
+        print(_word)
+        print(word)
+        # for i in range(len(word)) :
+        #     if word[i] == _word[i] or _word[i] == '.' : continue
+        #     else : return False
+        return True
 
 A = Solution()
-b = A.findLHS([1,3,2,2,5,2,3,7])
+b = A.validWordAbbreviation('internationalization',"i12iz4n")

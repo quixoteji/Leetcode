@@ -86,7 +86,7 @@
 |- [X] 119. Pascal's Triangle II|Easy|Array|||
 |- [X] 120. Triangle|Medium|DFS|DP||
 |- [X] 121. Best Time to Buy and Sell Stock|Easy|Array|||
-|- [] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
+|- [X] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
 |- [X] 125. Valid Palindrome|Easy||||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
@@ -153,7 +153,20 @@
 |- [] 342. Power of Four|Easy|Bit-manipulation|||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
-|- [] 401. Binary Watch|Easy||||
+|- [X] 401. Binary Watch|Easy||||
+|- [] 404. Sum of Left Leaves|Easy||||
+|- [X] 405. Convert a Number to Hexadecimal|Easy||||
+|- [X] 408. Valid Word Abbreviation|Easy||||
+|- [X] 409. Longest Palindrome|Easy||||
+|- [X] 412. Fizz Buzz|Easy||||
+|- [X] 414. Third Maximum Number|Easy||||
+|- [X] 415. Add Strings|Easy||||
+|- [] 422. Valid Word Square|Easy||||
+|- [] 434. Number of Segments in a String|Easy||||
+|- [X] 441. Arranging Coins|Easy||||
+|- [] 443. String Compression|Easy||||
+|- [] 447. Number of Boomeranges|Easy||||
+|- [] 448. Find All Numbers Disappeared in an Array|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 |- [X] 501. Find Mode in Binary Search Tree|Easy|Hashtable|||
