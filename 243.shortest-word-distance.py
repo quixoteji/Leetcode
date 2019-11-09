@@ -7,9 +7,15 @@
 # @lc code=start
 class Solution:
     def shortestDistance(self, words: List[str], word1: str, word2: str) -> int:
-        distance, num1, num2 = '', 0, 0
-        for word in words:
-            if word == word1
+        l1 = [i for i in range(len(words)) if words[i] == word1]
+        l2 = [i for i in range(len(words)) if words[i] == word2]
+        ans = float('inf')
+        for i in l1 :
+            for j in l2 :
+                ans = min(ans, abs(i - j))
+        return ans
+
+
         
 # @lc code=end
 

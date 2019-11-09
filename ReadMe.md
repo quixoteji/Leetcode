@@ -126,10 +126,13 @@
 |- [X] 226. Invert Binary Tree|Easy||||
 |- [X] 231. Power of Two|Easy||||
 |- [] 235. Lowest Common Ancestor of a Binary Tree|Easy||||
-|- [] 237. Delete Node in a Linked List|Easy||||
+|- [X] 237. Delete Node in a Linked List|Easy||||
 |- [X] 234. Palindrome Linked List|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
-|- [] 246. Strobogrammatic Number|Easy||||
+|- [X] 243. Shortest Word Distance|Easy||||
+|- [X] 246. Strobogrammatic Number|Easy||||
+|- [X] 252. Meeting Rooms|Easy||||
+|- [X] 256. Paint House|Easy||||
 |- [X] 257. Binary Tree Paths|Easy||||
 |- [X] 258. Add Digits|Easy||||
 |- [X] 259. 3Sum Smaller|Medium|Two-pointers|||
@@ -147,10 +150,20 @@
 |- [] 273. Integer to English|Hard||||
 |- [X] 274. H-Index|Medium|Hashmap|Sorted||
 |- [] 275. H-Index|Medium||||
-|- [] 283. Mover Zerods|Medium|Two-pointers|||
+|- [X] 276. Paint Fence|Easy||||
+|- [X] 278. Frist Bad Version|Easy||||
+|- [X] 283. Mover Zerods|Easy|Two-pointers|||
+|- [X] 290. Word Pattern|Easy||||
+|- [X] 292. Nim Game|Easy||||
+|- [X] 293. Flip Game|Easy||||
+|- [X] 298. Bulls and Cows|Easy||||
+|- [X] 303. Range Sum Query - Immutable|Easy||||
 |- [X] 326. Power of Three|Easy||||
 |- [] 336. Palindrome Pairs|Hard||||
-|- [] 342. Power of Four|Easy|Bit-manipulation|||
+|- [] 339. Nested List Weight Sum|Easy||||
+|- [X] 342. Power of Four|Easy|Bit-manipulation|||
+|- [X] 344. Reverse String|Easy||||
+|- [X] 345. Reverse Vowels of a String|Easy||||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [X] 401. Binary Watch|Easy||||

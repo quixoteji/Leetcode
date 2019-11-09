@@ -1,27 +1,12 @@
 import collections
+def moveZeroes(nums):
+    if len(nums) < 2 : return nums
+    p, q = 0, 0
+    while q < len(nums) :
+        if nums[q] == 0 : 
+            q += 1
+        else :
+            nums[p], nums[q] = nums[q], nums[p]
+            p += 1
 
-class Solution:
-    def abbr2word(self, abbr) :
-        s = ''
-        num = ''
-        for i, char in enumerate(abbr) :
-            if not char.isdigit() : 
-                if num : s += int(num) * '.'
-                s += char
-                num = ''
-            else : 
-                num += char
-        if num : s += int(num) * '.'
-        return s
-
-    def validWordAbbreviation(self, word, abbr):
-        _word = self.abbr2word(abbr)
-        print(_word)
-        print(word)
-        # for i in range(len(word)) :
-        #     if word[i] == _word[i] or _word[i] == '.' : continue
-        #     else : return False
-        return True
-
-A = Solution()
-b = A.validWordAbbreviation('internationalization',"i12iz4n")
+moveZeroes([1,2])

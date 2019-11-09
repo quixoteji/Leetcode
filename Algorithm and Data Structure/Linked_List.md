@@ -47,3 +47,11 @@ def removeElement(head, val) :
 
     return dummy.next
 ```
+
+### Delete Node in a Linked List
+```python
+def deleteNode(node) :
+    temp = node.next
+    node.val = temp.val
+    node.next = node.next.next
+```

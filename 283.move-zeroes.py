@@ -10,14 +10,18 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # p for 0 and q for non-zero
+        if len(nums) < 2 : return nums
         p, q = 0, 0
-        for num in nums:
-            if num == 0:
-                p += 1
-                nums[p], nums[q] = nums[q], nums[p]  
+        while q < len(nums) and p < len(nums):
+            if nums[q] == 0 : pass
             else :
-
-        
+                nums[p], nums[q] = nums[q], nums[p]
+                p += 1
+            q += 1
+            
+            
+            
+            
+    
 # @lc code=end
 
