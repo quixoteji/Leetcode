@@ -1,12 +1,11 @@
 import collections
-def moveZeroes(nums):
-    if len(nums) < 2 : return nums
-    p, q = 0, 0
-    while q < len(nums) :
-        if nums[q] == 0 : 
-            q += 1
-        else :
-            nums[p], nums[q] = nums[q], nums[p]
-            p += 1
+def isSubsequence(s, t):
+    i, j = 0, 0
+    while i < len(s) and j < len(t) :
+        if s[i] == s[j] : 
+            i += 1
+        j += 1
+        
+    return i == len(s)
 
-moveZeroes([1,2])
+isSubsequence("axc","ahbgdc")

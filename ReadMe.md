@@ -164,6 +164,17 @@
 |- [X] 342. Power of Four|Easy|Bit-manipulation|||
 |- [X] 344. Reverse String|Easy||||
 |- [X] 345. Reverse Vowels of a String|Easy||||
+|- [X] 346. Moving Average from Data Stream|Easy||||
+|- [X] 349. Intersection of Two Arrays|Easy||||
+|- [X] 350. Intersection of Two Arrays II|Easy||||
+|- [X] 359. Logger Rate Limiter|Easy||||
+|- [X] 367. Valid Perfect Square|Easy||||
+|- [X] 371. Sum of Two Integer|Easy||||
+|- [X] 374. Guess Number Higher or Lower|Easy||||
+|- [X] 383. Ransom Note|Easy||||
+|- [X] 387. First Unique Character in a String|Easy||||
+|- [X] 389. Find the Difference|Easy||||
+|- [X] 392. Is Subsequence|Easy||||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [X] 401. Binary Watch|Easy||||
@@ -177,6 +188,7 @@
 |- [] 422. Valid Word Square|Easy||||
 |- [] 434. Number of Segments in a String|Easy||||
 |- [X] 441. Arranging Coins|Easy||||
+|- [X] 447. Number of Boomeranges|Easy||||
 |- [] 443. String Compression|Easy||||
 |- [] 447. Number of Boomeranges|Easy||||
 |- [] 448. Find All Numbers Disappeared in an Array|Easy||||
@@ -201,7 +213,7 @@
 |- [X] 561. Array Partition I|Easy||||
 |- [] 563. Binary Tree Tilt|Easy||||
 |- [X] 566. Reshape the Matrix|Easy||||
-|- [] 572. Subtree of Another Tree|Easy||||
+|- [X] 572. Subtree of Another Tree|Easy||||
 |- [X] 575. Distribute Candies|Easy||||
 |- [X] 581. Shortest Unsorted Continuous Subarray|Easy||||
 |- [X] 589. N-ary Tree Preorder Traversal|Easy||||
@@ -225,4 +237,6 @@ Note:
 - [] Quick Sort
 - [] Difference between Backtracking and Depth First Search (DFS)
 - [] Greedy
+- [] Python Bit-manipulate
+- [] Newton Methods
 

@@ -13,10 +13,15 @@
 #         self.right = None
 
 class Solution:
+    def sameTree(self, s, t) :
+        if not s and not t : return True
+        elif (not s and t) or (s and not t) : return False
+        else : return s.val == t.val and self.sameTree(s.left, t.left) and self.sameTree(s.right, t.right)
     def isSubtree(self, s: TreeNode, t: TreeNode) -> bool:
-        if not s and not t: return True
         if not s : return False
-        return 
+        if self.sameTree(s, t) : return True
+        else : return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
+        
         
 # @lc code=end
 

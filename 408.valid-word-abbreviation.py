@@ -6,29 +6,20 @@
 
 # @lc code=start
 class Solution:
-    def abbr2word(self, abbr) :
-        s = ''
-        num = ''
-        for i, char in enumerate(abbr) :
-            if not char.isdigit() : 
-                if num :
-                    if num.startswith('0') : 
-                        return False 
-                    s += int(num) * '.'
-                s += char
-                num = ''
-            else : 
-                num += char
-        if num : 
-            if num.startswith('0') : 
-                return False 
-            s += int(num) * '.'
-        return s
-
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:
-        num = ''
-        while i < len()
-
+        i, j, num = 0, 0, ''
+        while i < len(word) :
+            if word[i] == abbr[j] :
+                i, j = i + 1, j + 1
+            else :
+                if abbr[j].isdigit() :
+                    while j < len(abbr) and abbr[j].isdigit() :
+                        num += abbr[j]
+                        j += 1
+                    i += int(num)
+                else :
+                    return False
+        return i == j
         
 # @lc code=end
 
