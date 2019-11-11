@@ -8,16 +8,17 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         if not nums: return 0
-        p, k = 1, 0
-        for i in range(1, len(nums)):
-            if nums[i] == nums[i - 1] : 
-                k += 1
-                if k < 2 : p += 1
-            else :
-                k = 0
-                nums[p] = nums[i]
-                p += 1
-        return p
+        i, j, k = 0, 1, 0
+        while i < len(nums) and j < len(nums):
+            if nums[i] == nums[j] :
+                if k < 2 : i, k = i + 1, k + 1
+            else : 
+                i, k = i + 1, 0
+            nums[i] = nums[j]
+            j += 1
+            
+
+        return i
         
 # @lc code=end
 

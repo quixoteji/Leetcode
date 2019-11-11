@@ -8,9 +8,10 @@
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         for num in nums :
-            num = abs(num)
-            nums[num - 1] = -1 * abs(nums[num])
-        return [num for num in nums if num > 0]
+            idx = abs(num) - 1
+            nums[idx] = -1 * nums[idx] if nums[idx] > 0 else nums[idx]
+        
+        return [i + 1 for i in range(len(nums)) if nums[i] > 0]
         
 # @lc code=end
 

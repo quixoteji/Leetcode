@@ -55,10 +55,17 @@
 |- [] 53. Maximum Subarray|Medium||||
 |- [] 58. Length of Last Word|Medium||||
 |- [] 59. Spiral Matrix II|Medium||||
+|- [X] 62. Unique Paths|Medium||||
+|- [X] 63. Unique Paths II|Medium||||
+|- [X] 64. Minimum Path Sum|Medium||||
+|- [X] 65. Valid Number|Hard||||
+|- [X] 66. Plus One|Easy||||
 |- [X] 67. Add Binary|Easy||||
-|- [] 68. Text Justification|Medium|Backtracking|||
+|- [X] 68. Text Justification|Hard||||
 |- [X] 69. Sqrt(x)|Easy||||
 |- [X] 70. Climbing Stairs|Easy|Dynamic-programming|||
+|- [] 71. Simplify Path|Medium|Stack|||
+|- [] 72. Edit Distance|Hard|Dynamic-programming|||
 |- [] 79. Word Search|Medium|BFS|||
 |- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
 |- [X] 83. Remove Duplicates from Sorted List|Easy||||
@@ -188,10 +195,18 @@
 |- [] 422. Valid Word Square|Easy||||
 |- [] 434. Number of Segments in a String|Easy||||
 |- [X] 441. Arranging Coins|Easy||||
-|- [X] 447. Number of Boomeranges|Easy||||
 |- [] 443. String Compression|Easy||||
-|- [] 447. Number of Boomeranges|Easy||||
-|- [] 448. Find All Numbers Disappeared in an Array|Easy||||
+|- [X] 447. Number of Boomeranges|Easy||||
+|- [X] 448. Find All Numbers Disappeared in an Array|Easy||||
+|- [X] 452. Minimum Moves to Equal Array Elements|Easy||||
+|- [X] 455. Assign Cookies|Easy||||
+|- [X] 459. Repeated Substring Pattern|Easy||||
+|- [X] 461. Hamming Distance|Easy||||
+|- [X] 463. Island Perimeter|Easy||||
+|- [X] 475. Heaters|Easy||||
+|- [X] 476. Number Complement|Easy||||
+|- [X] 482. License Key Formatting|Easy||||
+|- [X] 485. Max Consecutive Ones|Easy||||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 |- [X] 501. Find Mode in Binary Search Tree|Easy|Hashtable|||
