@@ -55,6 +55,7 @@
 |- [] 53. Maximum Subarray|Medium||||
 |- [] 58. Length of Last Word|Medium||||
 |- [] 59. Spiral Matrix II|Medium||||
+|- [X] 61. Rotated List|Medium|Linked List|||
 |- [X] 62. Unique Paths|Medium||||
 |- [X] 63. Unique Paths II|Medium||||
 |- [X] 64. Minimum Path Sum|Medium||||
@@ -66,6 +67,7 @@
 |- [X] 70. Climbing Stairs|Easy|Dynamic-programming|||
 |- [] 71. Simplify Path|Medium|Stack|||
 |- [] 72. Edit Distance|Hard|Dynamic-programming|||
+|- [] 77. Combinations|Medium|Backtracking|||
 |- [] 79. Word Search|Medium|BFS|||
 |- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
 |- [X] 83. Remove Duplicates from Sorted List|Easy||||
@@ -121,7 +123,7 @@
 |- [X] 203. Removed Linked List Element|Easy||||
 |- [X] 204. Count Primes|Easy||||
 |- [X] 205. Isomorphic Strings|Easy||||
-|- [] 206. Reverse Linked List|Easy||||
+|- [X] 206. Reverse Linked List|Easy||||
 |- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||

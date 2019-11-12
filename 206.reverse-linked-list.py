@@ -12,16 +12,26 @@
 #         self.next = None
 
 class Solution:
+    def sol1(self, head) :
+        if not head or not head.next : return head
+        prev, curr = None, head
+        while curr :
+            nextTemp = curr.next
+            curr.next = prev
+            prev, curr = curr, nextTemp    
+        return prev
+
     def reverseList(self, head: ListNode) -> ListNode:
         if not head or not head.next : return head
-        dummy = prev = ListNode(0)
+        dummy = ListNode(0)
         dummy.next = head
-        while head :
-            nextNode = head.next
-            dummy.next = nextNode
-            head = head.next
-            
+        while head and head.next :
+            temp = head.next
+            head.next = temp.next
+            temp.next = dummy.next
+            dummy.next = temp
         return dummy.next
+
         
 # @lc code=end
 

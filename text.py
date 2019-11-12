@@ -1,20 +1,19 @@
-class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid):
-        m, n = len(obstacleGrid), len(obstacleGrid[0])
+def dfs(ans, curr, nums, idx, k) :
+    if len(curr) == k : 
+        ans.append(curr[:])
+        return
+    for num in nums[idx : ]:
+        curr.append(num)
+        dfs(ans, curr, nums, idx + 1, k)
+        curr.pop()
         
-        dp = [[1 for _ in range(n)] for _ in range(m)]
-        for i in range(m) :
-            for j in range(n) :
-                print(i, j)
-                if obstacleGrid[i][j] == 1 : 
-                    dp[i][j] = 0
-                    continue
-                if i > 0 and j > 0 : dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-                elif i == 0 and j == 0 : dp[i][j]
-                elif i == 0 : dp[i][j] = dp[i][j-1]
-                else : dp[i][j] = dp[i-1][j]
-        return dp[m - 1][n - 1]
 
-A = Solution()
-A.uniquePathsWithObstacles([[0,0]])
+def combine(n, k) :
+    nums = [i for i in range(1, n + 1)]
+    ans, curr = [], []
+    dfs(ans, curr, nums, 0, k)
+    return ans
+
+
+print(combine(4, 2))
 

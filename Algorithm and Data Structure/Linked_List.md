@@ -55,3 +55,41 @@ def deleteNode(node) :
     node.val = temp.val
     node.next = node.next.next
 ```
+
+### Swap Nodes in Pairs
+```python
+def swap(head) :
+    if not head or not head.next : return head
+    dummy = prev = ListNode(0)
+    dummy.next = head
+    while prev.next and prev.next.next :
+        temp = prev.next.next
+        prev.next.next = temp.next
+        temp.next = prev.next
+        prev.next = temp
+        prev = temp.next
+    return dummy.next
+```
+
+### Reverse Linked List
+```python
+def reverseLinkedList(head) :
+    if not head or not head.next : return head
+    curr, prev = head, None
+    while curr :
+        nextTemp = curr.next
+        curr.next = prev
+        curr, prev = nextTemp, curr
+    return prev
+    
+def reverseLinkedList(head) :
+    if not head or not head.next : return head
+    dummy = ListNode(0)
+    dummy.next = head
+    while head and head.next :
+        temp = head.next
+        head.next = temp.next
+        temp.next = dummy.next
+        dummy.next = temp
+    return dummy.next
+```

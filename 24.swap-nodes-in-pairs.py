@@ -32,8 +32,16 @@ class Solution:
         return temp
 
     def swapPairs(self, head: ListNode) -> ListNode:
-        # return self.sol1(head)
-        return self.sol2(head)
+        if not head or not head.next : return head
+        dummy = prev = ListNode(0)
+        dummy.next = head
+        while prev.next and prev.next.next :
+            temp = prev.next.next
+            prev.next.next = temp.next
+            temp.next = prev.next
+            prev.next = temp
+            prev = temp.next
+        return dummy.next
             
 
 
