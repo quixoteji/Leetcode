@@ -69,8 +69,9 @@
 |- [] 72. Edit Distance|Hard|Dynamic-programming|||
 |- [] 77. Combinations|Medium|Backtracking|||
 |- [] 79. Word Search|Medium|BFS|||
-|- [] 80. Remove Duplicates from Sorted Array II|Medium|Two-pointers|||
+|- [X] 82. Remove Duplicates from Sorted List II|Medium|Two-pointers|||
 |- [X] 83. Remove Duplicates from Sorted List|Easy||||
+|- [] 86. Partition List|Medium||||
 |- [X] 88. Merge Sorted Array|Easy||||
 |- [] 98. Validate Binary Search Tree|Medium|Two-pointers|||
 |- [X] 100. Same Tree|Easy||||
@@ -178,8 +179,10 @@
 |- [X] 350. Intersection of Two Arrays II|Easy||||
 |- [X] 359. Logger Rate Limiter|Easy||||
 |- [X] 367. Valid Perfect Square|Easy||||
+|- [X] 369. Plus One Linked List|Medium||||
 |- [X] 371. Sum of Two Integer|Easy||||
 |- [X] 374. Guess Number Higher or Lower|Easy||||
+|- [X] 379. Design Phone Directory|Medium|Linked List|||
 |- [X] 383. Ransom Note|Easy||||
 |- [X] 387. First Unique Character in a String|Easy||||
 |- [X] 389. Find the Difference|Easy||||
@@ -198,6 +201,7 @@
 |- [] 434. Number of Segments in a String|Easy||||
 |- [X] 441. Arranging Coins|Easy||||
 |- [] 443. String Compression|Easy||||
+|- [X] 445. Add Two Numbers II|Medium|Stack|Recursive||
 |- [X] 447. Number of Boomeranges|Easy||||
 |- [X] 448. Find All Numbers Disappeared in an Array|Easy||||
 |- [X] 452. Minimum Moves to Equal Array Elements|Easy||||

@@ -16,12 +16,12 @@ class Solution:
         if not head : return head
         dummy = ListNode(-1)
         dummy.next = head
-        prev, curr = dummy, head
-        while curr :
-            while curr.next and curr.val == curr.next.val :
-                curr = curr.next
-            else :
-                prev, curr = prev.next, curr.next
+        prev = dummy
+        while prev.next :
+            curr = prev.next
+            while curr.next and curr.val == curr.next.val : curr = curr.next
+            if curr == prev.next : prev = prev.next
+            else : prev.next = curr.next
         return dummy.next
         
 # @lc code=end
