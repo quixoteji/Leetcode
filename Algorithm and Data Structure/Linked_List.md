@@ -81,7 +81,7 @@ def reverseLinkedList(head) :
         curr.next = prev
         curr, prev = nextTemp, curr
     return prev
-    
+
 def reverseLinkedList(head) :
     if not head or not head.next : return head
     dummy = ListNode(0)
@@ -92,4 +92,10 @@ def reverseLinkedList(head) :
         temp.next = dummy.next
         dummy.next = temp
     return dummy.next
+
+def reverseLinkedList(head) :
+    prev, curr = None, head
+    while curr :
+        prev, curr.next, curr = curr, prev, curr.next
+    return prev
 ```

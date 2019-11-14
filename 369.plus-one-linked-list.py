@@ -12,17 +12,21 @@
 #         self.next = None
 
 class Solution:
-    def sol1(self, head) :
-        stack = list()
-        while head : 
-            stack.append(head.val)
-            head = head.next
-        head, carry = ListNode(0), 0
-        while stack or carry :
-            val = stack.pop()
-            head.next = ()
+    def reverse(self, head) :
+        prev, curr = None, head
+        while curr:
+            prev, curr.next, curr = curr, prev, curr.next
+        return prev
     def plusOne(self, head: ListNode) -> ListNode:
-        return self.sol1(head)
+        if not head : return head
+        dummy = head = self.reverse(head)
+        carry = 1
+        while head :
+            head.val = (head.val + carry) % 10
+            carry = (head.val + carry) // 10
+            head = head.next
+        if carry : head = 
+        return self.reverse(dummy)
         
 # @lc code=end
 

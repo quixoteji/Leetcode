@@ -107,6 +107,7 @@
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
 |- [] 149. Max Points on a Line|Hard||||
+|- [X] 151. Reverse Words in a String|Medium||||
 |- [X] 155. Min Stack|Easy||||
 |- [] 157. Read N Characters Given Read4|Easy||||
 |- [] 160. Intersection of Two Linked Lists|Easy||||
@@ -115,6 +116,7 @@
 |- [X] 170. Two Sum III - Data structure design|Easy||||
 |- [X] 171. Excel Sheet Column Number|Easy||||
 |- [X] 171. Factorial Trailing Zeroes|Easy||||
+|- [] 186. Reverse Words in a String II|Medium||||
 |- [X] 189. Rotate Array|Easy||||
 |- [X] 190. Reverse Bits|Easy||||
 |- [X] 191. Number of 1 Bits|Easy||||
@@ -213,14 +215,17 @@
 |- [X] 476. Number Complement|Easy||||
 |- [X] 482. License Key Formatting|Easy||||
 |- [X] 485. Max Consecutive Ones|Easy||||
+|- [] 490. The Maze|Medium|BFS|DFS||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 |- [X] 501. Find Mode in Binary Search Tree|Easy|Hashtable|||
 |- [X] 504. Base 7|Easy||||
+|- [] 505. The Maze II|Medium|BFS|||
 |- [] 506. Relative Ranks|Easy||||
 |- [X] 507. Perfect Number|Easy||||
 |- [X] 509. Fibonacci Number|Easy||||
 |- [X] 520. Detect Capital|Easy||||
+|- [] 526.Beautiful Arrangement|Easy||||
 |- [] 530. Minimum Absolute Difference in BST|Easy||||
 |- [X] 532. K-diff Pairs in an Array|Easy||||
 |- [] 538. Convert BST To Greater Tree|Easy||||
