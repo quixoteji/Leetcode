@@ -6,54 +6,30 @@
 
 # @lc code=start
 class Solution:
-    def __init__(self) :
-        self.board = None
-        self.checkrows = None
-        self.checkcols = None
-        self.checkblocks = None
-    def position(self, i, j) :
-        x, y, z = i, j, (i // 3) * 3 + (j // 3)
-    # True : cannot place
-    def check(self, i, j, val) :
-        x, y, z = self.position(i, j)
-        return self.checkrows(x, val) or self.checkcols(y, val) or self.checkblocks(z, block)
-    
-    def update(self, i, j, val) :
-        x, y, z = self.position(i, j)
-        self.checkrows[x][val] = True
-        self.checkcols[y][val] = True
-        self.checkblocks[z][val] = True
-        self.board[i][j] = str(val)
+    def fill(self, board, x, y) :
+        if y == 9 : return 
+        nx = (x + 1) % 9;
+        ny = y + 1 if nx == 0 else y
+        if board[y][x] != '.': 
+            self.fill(board, nx, ny)
+        for num in range(1, 10) :
+            nr, nc, nb = 
         
-    def search(self, i, j) :
-        if i == 8 and j == 8 : return self.board
-        for i_idx in range(i, 9) :
-            for j_idx in range(j, 9) :
-                if self.board[i][j].isdigit() : 
-                    if not self.check(i_idx, j_idx, int(self.board[i][j])) :
-                        self.update(i_idx, j_idx, int(self.board[i][j]))
-                    else : return
-                else :
-                    for val in range(1, 10) :
-                        if self.check(i_idx, j_idx, val) : return
-                        else :
-                            self.update(i_idx, j_idx, val)
-                            self.search(i_idx, j_idx)
-                            self.update(i_idx, j_idx, '.')
-
-
-                
-
     def solveSudoku(self, board: List[List[str]]) -> None:
         """
         Do not return anything, modify board in-place instead.
         """
-        self.board = board
-        self.checkrows = [[False for _ in range(9)] for _ in range(9)]
-        self.checkcols = [[False for _ in range(9)] for _ in range(9)]
-        self.checkblocks = [[False for _ in range(9)] for _ in range(9)]
-        ans = self.search(0, 0)
-        return ans
+        _rows = [True for i in range(9)]
+        _cols = [True for i in range(9)]
+        _blocks = [True for i in range(9)]
+        for i in range(9) :
+            for j in range(9) :
+                if board[i][j] != '.' :
+                    n = board[i][j] - '0'
+                    _rows[i][n] = False
+                    _cols[j][n] = False
+                    _blocks[i // 3 * 3 + j // 3][n] = False
+        self.fill(board, 0, 0)
         
         
 # @lc code=end

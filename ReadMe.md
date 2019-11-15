@@ -22,17 +22,17 @@
 |- [x] 20. Valid Parentheses|Easy|Hashtable|Stack||
 |- [x] 21. Merge Two Sorted Lists|Easy|LinkedList|||
 |- [x] 22. Generate Parentheses|Medium|Backtracking|||
-|- [] 23. Merge k Sorted Lists|Medium|Backtracking|||
-|- [] 24. Swap Nodes in Pairs|Medium||||
-|- [] 25. Reverse Nodes in k-Group|Hard||||
+|- [X] 23. Merge k Sorted Lists|Medium|Backtracking|||
+|- [X] 24. Swap Nodes in Pairs|Medium||||
+|- [X] 25. Reverse Nodes in k-Group|Hard||||
 |- [X] 26. Remove Duplicates from Sorted Array|Easy|Array|Two-pointers||
 |- [X] 27. Remove Element|Easy|Array|Two-pointers||
 |- [X] 28. Implement strStr()|Easy|String|||
 |- [X] 29. Divide Two Integers|Medium|Binary-search|||
-|- [] 30. Substring with Concatenation of All Words|Hard||||
-|- [] 31. Next Permutation|Medium||||
-|- [] 32. Longest Valid Parentheses|Hard|Dynamic-programming|||
-|- [] 33. Search in Rotated Sorted Array|Medium|Binary-search|||
+|- [X] 30. Substring with Concatenation of All Words|Hard||||
+|- [X] 31. Next Permutation|Medium||||
+|- [X] 32. Longest Valid Parentheses|Hard|Dynamic-programming|||
+|- [X] 33. Search in Rotated Sorted Array|Medium|Binary-search|||
 |- [X] 34. Find First and Last Position of Element in Sorted Array|Medium|Binary-search|||
 |- [X] 35. Search Insert Position|Easy|Binary-search|||
 |- [X] 36. Valid Sudoku|Medium||||
@@ -43,7 +43,7 @@
 |- [X] 41. First Missing Positives|Hard||||
 |- [] 42. Trapping Rain Water|Hard|Two-pointers|Stack||
 |- [] 43. Multiply Strings|Medium||||
-|- [] 44. Wildcard Matching|Hard||||
+|- [] 44. Wildcard Matching|Hard|Dynamic-programming|Backtracking|Greedy|
 |- [] 45. Jump Game II|Hard|Two-pointers|Stack||
 |- [X] 46. Permutations|Medium|DFS|||
 |- [] 47. Permutations II|Medium|DFS|||

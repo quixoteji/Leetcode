@@ -1,4 +1,10 @@
-import collections
+#
+# @lc app=leetcode id=30 lang=python3
+#
+# [30] Substring with Concatenation of All Words
+#
+
+# @lc code=start
 class Solution:
     def sol1(self, s, words) :
         ans = []
@@ -6,7 +12,7 @@ class Solution:
         if len(words) < 1 : return ans
         for word in words : hashmap_words[word] += 1
         subLen, wordLen, wordNum, idx = len(words) * len(words[0]), len(words[0]), len(words), 0 
-        while idx + subLen < len(s) :
+        while idx + subLen <= len(s) :
             hashmap_sub = collections.defaultdict(int)
             substring = s[idx : idx + subLen]
             i = 0
@@ -19,9 +25,9 @@ class Solution:
             if i == wordNum : ans.append(idx)
             idx += 1
         return ans
-
-    def findSubstring(self, s, words):
+    
+    def findSubstring(self, s: str, words: List[str]) -> List[int]:
         return self.sol1(s, words)
+        
+# @lc code=end
 
-A = Solution()
-A.findSubstring("barfoothefoobarman", ["foo","bar"])
