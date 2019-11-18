@@ -16,14 +16,13 @@ class Solution:
         ans = ''
         l1, l2 = len(num1), len(num2)
         if l1 * l2 == 0 : return ans
-        i = j = carry = 0
-        while l1 > 0 or l2 > 0 :
-            val1 = self.toVal(num1[l1 - 1]) if l1 > 0 else 1
-            val2 = self.toVal(num2[l2 - 1]) if l2 > 0 else 1
-            carry, val = divmod(val1 * val2 + carry, 10)
-            ans = self.toStr(val) + ans
-            l1, l2 = l1 - 1, l2 - 1
-        return ans if carry == 0 else self.toStr(carry) + ans
+        res = 0
+        for i in range(l1) :
+            val = 0
+            for j in range(l2) :
+                val += 
+
+        
 
         
 # @lc code=end

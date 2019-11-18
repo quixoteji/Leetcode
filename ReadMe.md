@@ -36,12 +36,12 @@
 |- [X] 34. Find First and Last Position of Element in Sorted Array|Medium|Binary-search|||
 |- [X] 35. Search Insert Position|Easy|Binary-search|||
 |- [X] 36. Valid Sudoku|Medium||||
-|- [] 37. Sudoku Solver|Hard||||
+|- [X] 37. Sudoku Solver|Hard||||
 |- [X] 38. Count and Say|Medium||||
 |- [X] 39. Combination Sum|Medium|Backtracking|||
 |- [X] 40. Combination Sum II|Medium|Backtracking|||
 |- [X] 41. First Missing Positives|Hard||||
-|- [] 42. Trapping Rain Water|Hard|Two-pointers|Stack||
+|- [X] 42. Trapping Rain Water|Hard|Two-pointers|Stack||
 |- [] 43. Multiply Strings|Medium||||
 |- [] 44. Wildcard Matching|Hard|Dynamic-programming|Backtracking|Greedy|
 |- [] 45. Jump Game II|Hard|Two-pointers|Stack||
@@ -97,7 +97,9 @@
 |- [X] 120. Triangle|Medium|DFS|DP||
 |- [X] 121. Best Time to Buy and Sell Stock|Easy|Array|||
 |- [X] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
-|- [X] 125. Valid Palindrome|Easy||||
+|- [X] 125. Valid Palindrome|Hard||||
+|- [X] 126. Word Ladder II|Hard||||
+|- [X] 127. Word Ladder|Medium|BFS|Bidirectional-BFS||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
