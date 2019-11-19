@@ -42,17 +42,18 @@
 |- [X] 40. Combination Sum II|Medium|Backtracking|||
 |- [X] 41. First Missing Positives|Hard||||
 |- [X] 42. Trapping Rain Water|Hard|Two-pointers|Stack||
-|- [] 43. Multiply Strings|Medium||||
+|- [X] 43. Multiply Strings|Medium||||
 |- [] 44. Wildcard Matching|Hard|Dynamic-programming|Backtracking|Greedy|
-|- [] 45. Jump Game II|Hard|Two-pointers|Stack||
+|- [X] 45. Jump Game II|Hard|Greedy|Array||
 |- [X] 46. Permutations|Medium|DFS|||
-|- [] 47. Permutations II|Medium|DFS|||
-|- [] 48. Rotate Image|Medium|Two-pointers|Stack||
+|- [X] 47. Permutations II|Medium|DFS|||
+|- [X] 48. Rotate Image|Medium||||
 |- [X] 49. Group Anagrams|Medium||||
 |- [X] 50. Pow(x, n)|Medium|Math|Binary-search||
 |- [X] 51. N Queens|Hard|Backtracking|||
 |- [X] 52. N Queens II|Hard|Backtracking|||
 |- [] 53. Maximum Subarray|Medium||||
+|- [X] 55. Jump Game|Medium|Greedy||||
 |- [] 58. Length of Last Word|Medium||||
 |- [] 59. Spiral Matrix II|Medium||||
 |- [X] 61. Rotated List|Medium|Linked List|||

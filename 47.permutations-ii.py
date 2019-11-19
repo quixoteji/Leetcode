@@ -11,7 +11,7 @@ class Solution:
             ans.append(curr[:])
             return
         for i in range(len(nums)) :
-            if i > 0 and nums[i] == nums[i-1] : continue
+            if i > 0 and nums[i] == nums[i-1] and i - 1 in visited: continue
             if i in visited : continue
             visited.append(i)
             curr.append(nums[i])
