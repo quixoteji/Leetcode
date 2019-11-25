@@ -68,6 +68,10 @@
 |- [X] 70. Climbing Stairs|Easy|Dynamic-programming|||
 |- [] 71. Simplify Path|Medium|Stack|||
 |- [] 72. Edit Distance|Hard|Dynamic-programming|||
+|- [X] 73. Set Matrix Zeroes|Medium|Array|||
+|- [X] 74. Search a 2D Matrix|Medium|Array|||
+|- [X] 75. Sort Colors|Medium|Array|||
+|- [] 76. Minimum Window Substring|Hard|Array|||
 |- [] 77. Combinations|Medium|Backtracking|||
 |- [] 79. Word Search|Medium|BFS|||
 |- [X] 82. Remove Duplicates from Sorted List II|Medium|Two-pointers|||
@@ -109,30 +113,55 @@
 |- [X] 141. Linked List Cycle|Easy|Two-pointers|||
 |- [X] 144. Binary Tree Preorder Traversal|Medium||||
 |- [X] 145. Binary Tree Postorder Traversal|Medium||||
+|- [] 147. Insertion Sort List | Medium|LinkedList|||
 |- [] 149. Max Points on a Line|Hard||||
+|- [X] 150. Evaluate Reverse Polish Notation|Medium||||
 |- [X] 151. Reverse Words in a String|Medium||||
+|- [X] 152. Maximum Product Subarray|Medium||||
+|- [] 153. Find Minimum in Rotated Sorted Array|Medium||||
 |- [X] 155. Min Stack|Easy||||
-|- [] 157. Read N Characters Given Read4|Easy||||
-|- [] 160. Intersection of Two Linked Lists|Easy||||
+|- [X] 156. Binary Tree Upside Down|Medium||||
+|- [X] 157. Read N Characters Given Read4|Easy||||
+|- [] 158. Read N Characters Given Read4 II|Medium||||
+|- [X] 159. Longest Substring with At Most Two Distinct Characters|Hard||||
+|- [X] 160. Intersection of Two Linked Lists|Easy||||
+|- [X] 161. One Edit Distance|Medium||||
+|- [] 162. Find Peak Element|Medium||||
+|- [X] 163. Missing Ranges|Medium||||
+|- [] 164. Maximum Gap|Hard||||
+|- [X] 165. Compare Version Numbers|Medium||||
+|- [] 166. Fraction to Recurring Decimal|Medium||||
 |- [X] 168. Excel Sheet Column Title|Easy||||
 |- [X] 169. Majority Element|Easy||||
 |- [X] 170. Two Sum III - Data structure design|Easy||||
 |- [X] 171. Excel Sheet Column Number|Easy||||
-|- [X] 171. Factorial Trailing Zeroes|Easy||||
-|- [] 186. Reverse Words in a String II|Medium||||
+|- [X] 172. Factorial Trailing Zeroes|Easy||||
+|- [X] 173. Binary Search Tree Iterator|Easy||||
+|- [X] 174. Dungeon Game|Hard||||
+|- [X] 179. Largest Number|Medium||||
+|- [X] 186. Reverse Words in a String II|Medium||||
+|- [X] 187. Repeated DNA Sequences|Medium||||
+|- [X] 188. Best Time to Buy and Sell Stock IV|Hard||||
 |- [X] 189. Rotate Array|Easy||||
 |- [X] 190. Reverse Bits|Easy||||
 |- [X] 191. Number of 1 Bits|Easy||||
 |- [X] 198. House Robber|Easy||||
+|- [X] 199. Binary Tree Right Side View|Medium||||
 |- [X] 200. Number of Islands|Medium|Union-find Set|||
+|- [X] 201. Bitwise AND of Numbers Range|Medium|Union-find Set|||
 |- [X] 202. Happy Number|Easy||||
 |- [X] 203. Removed Linked List Element|Easy||||
 |- [X] 204. Count Primes|Easy||||
 |- [X] 205. Isomorphic Strings|Easy||||
 |- [X] 206. Reverse Linked List|Easy||||
+|- [X] 207. Course Schedual|Medium||||
 |- [X] 208. Implement Trie (Prefix Tree)|Medium|Trie|||
+|- [] 209. Minimum Size Subarray Sum|Medium||||
+|- [X] 210. Course Schedual II|Medium||||
 |- [X] 211. Add and Search Word - Data structure design|Medium|Trie|||
 |- [X] 212. Word Search II |Hard|Trie|Backtracking||
+|- [X] 213. House Robber II|Medium||||
+|- [] 214. Shortest Palindrome|Hard||||
 |- [X] 217. Contains Duplicate|Easy||||
 |- [X] 219. Contains Duplicate II|Medium||||
 |- [X] 220. Contains Duplicate III|Medium||||
@@ -247,10 +276,12 @@
 |- [X] 581. Shortest Unsorted Continuous Subarray|Easy||||
 |- [X] 589. N-ary Tree Preorder Traversal|Easy||||
 |- [X] 590. N-ary Tree Postorder Traversal|Easy||||
+|- [X] 592. Fraction Addition and Subtraction|Math||||
 |- [X] 593. Valid Square|Medium||||
 |- [X] 594. Longest Harmonious Subsequence|Easy||||
 |- [] 598. Range Addition II|Easy||||
 |- [X] 599. Minimum Index Sum of Two Lists|Easy||||
+|- [X] 600. Non-negative Integers without Consecutive Ones|Easy||||
 |---|---|---|---|---|
 |- [X] 684. Redundant Connection|Medium|Union-find Set|||
 |- [] 685. Redundant Connection II|Hard|Union-find Set|||
