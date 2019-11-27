@@ -1,3 +1,10 @@
+#
+# @lc app=leetcode id=254 lang=python3
+#
+# [254] Factor Combinations
+#
+
+# @lc code=start
 class Solution:
     # backtrack
     def dfs(self, n, start, curr, ans) :
@@ -11,18 +18,16 @@ class Solution:
                 curr.append(i)
                 self.dfs(n // i, i, curr, ans)
                 curr.pop()
-
+        return
     def sol1(self, n) :
         res = []
         curr = []
         self.dfs(n,  2, curr, res) 
         return res
 
-    def getFactors(self, n):
+    def getFactors(self, n: int) -> List[List[int]]:
         return self.sol1(n)
 
-A = Solution()
-
-print(A.getFactors(12))
-
+        
+# @lc code=end
 

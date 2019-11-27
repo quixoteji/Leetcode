@@ -174,13 +174,24 @@
 |- [X] 234. Palindrome Linked List|Easy||||
 |- [X] 242. Valid Anagram|Easy||||
 |- [X] 243. Shortest Word Distance|Easy||||
+|- [X] 244. Shortest Word Distance II|Medium||||
+|- [X] 245. Shortest Word Distance III|Medium||||
 |- [X] 246. Strobogrammatic Number|Easy||||
+|- [X] 247. Strobogrammatic Number II|Medium||||
+|- [X] 248. Strobogrammatic Number III|Medium||||
+|- [X] 249. Group shift strings|Medium||||
+|- [X] 250. Count Univalue Subtrees|Medium||||
+|- [X] 251. Flatten 2D Vector|Medium||||
 |- [X] 252. Meeting Rooms|Easy||||
+|- [X] 253. Meeting Rooms II|Medium||||
+|- [X] 254. Factor Combinations|Medium||||
+|- [X] 255. Verify Preorder Sequence in Binary Search Tree|Medium||||
 |- [X] 256. Paint House|Easy||||
 |- [X] 257. Binary Tree Paths|Easy||||
 |- [X] 258. Add Digits|Easy||||
 |- [X] 259. 3Sum Smaller|Medium|Two-pointers|||
 |- [X] 260. Single Number III|Medium||||
+|- [X] 261. Graph Valid Tree|Medium||||
 |- [X] 263. Ugly Number|Easy||||
 |- [X] 264. Ugly Number II|Medium|Dynamic-programming|Heap||
 |- [] 265. Paint House II|Medium|Dynamic-programming|||
@@ -201,6 +212,7 @@
 |- [X] 292. Nim Game|Easy||||
 |- [X] 293. Flip Game|Easy||||
 |- [X] 298. Bulls and Cows|Easy||||
+|- [] 300. Longest Increasing Subsequence|Easy||||
 |- [X] 303. Range Sum Query - Immutable|Easy||||
 |- [X] 326. Power of Three|Easy||||
 |- [] 336. Palindrome Pairs|Hard||||
@@ -221,6 +233,7 @@
 |- [X] 387. First Unique Character in a String|Easy||||
 |- [X] 389. Find the Difference|Easy||||
 |- [X] 392. Is Subsequence|Easy||||
+|- [] 398. Random Pick Index|Medium||||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [X] 401. Binary Watch|Easy||||
@@ -299,4 +312,5 @@ Note:
 - [] Greedy
 - [] Python Bit-manipulate
 - [] Newton Methods
+- [] negative number module and Complement
 
