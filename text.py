@@ -1,28 +1,28 @@
 class Solution:
-    # backtrack
-    def dfs(self, n, start, curr, ans) :
-        if (n == 1) : 
-            if len(curr) > 1 : 
-                print(curr)
-                ans.append(curr[:])
-                return 
-        for i in range(start, n) :
-            if n % i == 0 :
-                curr.append(i)
-                self.dfs(n // i, i, curr, ans)
-                curr.pop()
-
-    def sol1(self, n) :
-        res = []
+    # Solution 1 : dfs
+    def sol1(self, s) :
+        if len(s) < 2 : return 0 
+        ans = []
         curr = []
-        self.dfs(n,  2, curr, res) 
-        return res
+        self.dfs(ans, curr, s)
+        print(ans)
+        return 10
 
-    def getFactors(self, n):
-        return self.sol1(n)
+    def dfs(self, ans, curr, s) :
+        if not s :
+            ans.append(curr[:])
+            return 
+        for i in range(1, len(s) + 1) :
+            ss = s[:i]
+            if ss == ss[::-1] :
+                curr.append(ss)
+                self.dfs(ans, curr, s[i:])
+                curr.pop()
+    
+    def minCut(self, s):
+        return self.sol1(s)
 
 A = Solution()
-
-print(A.getFactors(12))
+print(A.minCut('abc'))
 
 

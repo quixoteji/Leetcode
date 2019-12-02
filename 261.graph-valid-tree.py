@@ -7,15 +7,13 @@
 # @lc code=start
 class Solution:
     # topological sort
-    def dfs(self, n, start, graph) :
-        if start[n] == 1 : return False
-        if start[n] == 2 : return True
-        start[n] = 1
+    # 0 : unknown 1 : visiting 2 : visited
+    def dfs(self, n, state, graph) :
+        if state[n] == 1 : return False
+        if state[n] == 2 : return True
+        state[n] = 1
         for node in graph[n] :
-            if start[node] : return False
-
-
-
+            if state[node] : return False
 
     def sol1(self, n, edges) :
         graph = [list() for _ in range(n)]

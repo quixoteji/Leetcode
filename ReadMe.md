@@ -78,7 +78,13 @@
 |- [X] 83. Remove Duplicates from Sorted List|Easy||||
 |- [] 86. Partition List|Medium||||
 |- [X] 88. Merge Sorted Array|Easy||||
-|- [] 98. Validate Binary Search Tree|Medium|Two-pointers|||
+|- [] 93. Restore IP Addresses|Medium||||
+|- [X] 94. Binary Tree Inorder Traversal|Medium||||
+|- [X] 95. Unique Binary Search Trees II|Medium||||
+|- [X] 96. Unique Binary Search Trees|Medium||||
+|- [X] 97. Interleaving String|Hard||||
+|- [X] 98. Validate Binary Search Tree|Medium|Two-pointers|||
+|- [X] 99. Recover Binary Search Tree|Hard||||
 |- [X] 100. Same Tree|Easy||||
 |- [X] 101. Symmetric Tree|Easy||||
 |- [X] 102. Binary Tree Level Order Traversal|Medium||||
@@ -105,6 +111,9 @@
 |- [X] 125. Valid Palindrome|Hard||||
 |- [X] 126. Word Ladder II|Hard||||
 |- [X] 127. Word Ladder|Medium|BFS|Bidirectional-BFS||
+|- [X] 131. Palindrome Partitioning|Medium|DFS|DP||
+|- [X] 132. Palindrome Partitioning II|Hard|DFS|DP||
+|- [] 133. Clone Graph|Medium|DFS|BFS||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
@@ -191,7 +200,7 @@
 |- [X] 258. Add Digits|Easy||||
 |- [X] 259. 3Sum Smaller|Medium|Two-pointers|||
 |- [X] 260. Single Number III|Medium||||
-|- [X] 261. Graph Valid Tree|Medium||||
+|- [] 261. Graph Valid Tree|Medium||||
 |- [X] 263. Ugly Number|Easy||||
 |- [X] 264. Ugly Number II|Medium|Dynamic-programming|Heap||
 |- [] 265. Paint House II|Medium|Dynamic-programming|||
@@ -207,20 +216,39 @@
 |- [] 275. H-Index|Medium||||
 |- [X] 276. Paint Fence|Easy||||
 |- [X] 278. Frist Bad Version|Easy||||
+|- [X] 280. Wiggle Sort|Medium||||
 |- [X] 283. Mover Zerods|Easy|Two-pointers|||
 |- [X] 290. Word Pattern|Easy||||
 |- [X] 292. Nim Game|Easy||||
 |- [X] 293. Flip Game|Easy||||
 |- [X] 298. Bulls and Cows|Easy||||
-|- [] 300. Longest Increasing Subsequence|Easy||||
+|- [X] 300. Longest Increasing Subsequence|Medium||||
+|- [] 301. Remove Invalid Parentheses|Hard||||
+|- [] 302. Smallest Rectangle Enclosing Black Pixels|Haßrd||||
 |- [X] 303. Range Sum Query - Immutable|Easy||||
+|- [X] 304. Range Sum Query - Immutable II |Medium||||
+|- [] 305. Number of Islands II|Hard||||
+|- [] 306. Additive Number|Medium||||
+|- [] 311. Sparse Matrix Multiplication|Medium||||
+|- [] 312. Burst Balloons|Hard||||
+|- [] 313. Super Ugly Number|Medium||||
+|- [] 314. Binary Tree Vertical Order Traversal|Medium||||
+|- [] 315. Count of Smaller Numbers After Self|Hard||||
+|- [] 318. Maximum Product of Word Lengths|Medium||||
+|- [X] 323. Number of Connected Components in an Undirected Graph|Medium||||
+|- [] 324. Wiggle Sort II |Medium||||
+|- [] 325. Maximum Size Subarray Sum Equals k|Medium||||
 |- [X] 326. Power of Three|Easy||||
+|- [] 327. Count of Range Sum|Hard||||
+|- [] 328. Odd Even Linked List|Medium||||
 |- [] 336. Palindrome Pairs|Hard||||
 |- [] 339. Nested List Weight Sum|Easy||||
 |- [X] 342. Power of Four|Easy|Bit-manipulation|||
 |- [X] 344. Reverse String|Easy||||
 |- [X] 345. Reverse Vowels of a String|Easy||||
 |- [X] 346. Moving Average from Data Stream|Easy||||
+|- [X] 347. Top K Frequent Elements|Medium||||
+|- [X] 348. Design Tic-Tac-Toe|Medium||||
 |- [X] 349. Intersection of Two Arrays|Easy||||
 |- [X] 350. Intersection of Two Arrays II|Easy||||
 |- [X] 359. Logger Rate Limiter|Easy||||
@@ -313,4 +341,4 @@ Note:
 - [] Python Bit-manipulate
 - [] Newton Methods
 - [] negative number module and Complement
-
+- [] Morris Traversal
