@@ -1,28 +1,24 @@
 class Solution:
-    # Solution 1 : dfs
-    def sol1(self, s) :
-        if len(s) < 2 : return 0 
-        ans = []
-        curr = []
-        self.dfs(ans, curr, s)
-        print(ans)
-        return 10
+    def canCompleteCircuit(self, gas, cost):
+        return self.sol1(gas, cost)
 
-    def dfs(self, ans, curr, s) :
-        if not s :
-            ans.append(curr[:])
-            return 
-        for i in range(1, len(s) + 1) :
-            ss = s[:i]
-            if ss == ss[::-1] :
-                curr.append(ss)
-                self.dfs(ans, curr, s[i:])
-                curr.pop()
-    
-    def minCut(self, s):
-        return self.sol1(s)
+    # Solution 1 :
+    def sol1(self, gas, cost) :
+        if len(gas) < 2 : return 0
+        tank = 0
+        for i in range(len(gas)) :
+            tank = gas[i] - cost[i]
+            idx = i + 1 
+            while idx != i :
+                if idx == len(gas) : idx = 0
+                if tank < 0 : break
+                else : tank += gas[idx] - cost[idx]
+                idx = idx + 1 
+            if tank >= 0 and idx == i : return idx        
+        return -1
+                
 
 A = Solution()
-print(A.minCut('abc'))
+print(A.canCompleteCircuit([3,1,1],[1,2,2]))
 
 

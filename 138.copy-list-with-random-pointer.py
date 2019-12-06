@@ -15,15 +15,25 @@ class Node:
 """
 class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
+        return self.sol1(head)
+
+    # Solution 1 :
+    def sol1(self, head) :
+        visited = dict()
+        return self.dfs(head, visited)
+
+    def dfs(self, head, visited) :
         if not head : return head
-        cloned_head = ListNode(head.val)
-        cloned_head.next = head.next
-        cloned_head.random = head.random
-        dummy = cloned_head
-        while dummy :
-            node = dummy.next
-            temp = ListNode(dummy.val)
-            temp.
+        if head in visited : return visited[head]
+        node = Node(head.val, None, None)
+        visited[head] = node
+        node.next = self.dfs(head.next, visited)
+        node.random = self.dfs(head.random, visited)
+        return node
+        
+
+            
+
         
 # @lc code=end
 

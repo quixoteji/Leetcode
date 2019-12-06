@@ -76,6 +76,7 @@
 |- [] 79. Word Search|Medium|BFS|||
 |- [X] 82. Remove Duplicates from Sorted List II|Medium|Two-pointers|||
 |- [X] 83. Remove Duplicates from Sorted List|Easy||||
+|- [] 84. Largest Rectangle in Histogram|Hard||||
 |- [] 86. Partition List|Medium||||
 |- [X] 88. Merge Sorted Array|Easy||||
 |- [] 93. Restore IP Addresses|Medium||||
@@ -108,12 +109,19 @@
 |- [X] 120. Triangle|Medium|DFS|DP||
 |- [X] 121. Best Time to Buy and Sell Stock|Easy|Array|||
 |- [X] 122. Best Time to Buy and Sell Stock II|Easy|Greedy|||
+|- [X] 123. Best Time to Buy and Sell Stock III|Medium|Greedy|||
+|- [] 124. Binary Tree Maximum Path Sum|Medium||||
 |- [X] 125. Valid Palindrome|Hard||||
 |- [X] 126. Word Ladder II|Hard||||
 |- [X] 127. Word Ladder|Medium|BFS|Bidirectional-BFS||
+|- [] 128. Longest Consecutive Sequence|Hard||||
+|- [X] 129. Sum Root to Leaf Numbers|Medium||||
+|- [X] 130. Surrounded Regions|Medium||||
 |- [X] 131. Palindrome Partitioning|Medium|DFS|DP||
 |- [X] 132. Palindrome Partitioning II|Hard|DFS|DP||
-|- [] 133. Clone Graph|Medium|DFS|BFS||
+|- [X] 133. Clone Graph|Medium|DFS|BFS||
+|- [] 134. Gas Station|Medium||||
+|- [] 135. Candy|Hard||||
 |- [X] 136. Single Number|Easy||||
 |- [X] 137. Single Number II|Medium||||
 |- [] 138. Copy List with Random Pointer|Medium||||
@@ -265,6 +273,8 @@
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
 |- [] 400. Nth Digit|Medium||||
 |- [X] 401. Binary Watch|Easy||||
+|- [X] 402. Remove K Digits|Medium||||
+|- [X] 403. Frog Jump|Medium||||
 |- [] 404. Sum of Left Leaves|Easy||||
 |- [X] 405. Convert a Number to Hexadecimal|Easy||||
 |- [X] 408. Valid Word Abbreviation|Easy||||
@@ -273,7 +283,9 @@
 |- [X] 414. Third Maximum Number|Easy||||
 |- [X] 415. Add Strings|Easy||||
 |- [] 422. Valid Word Square|Easy||||
-|- [] 434. Number of Segments in a String|Easy||||
+|- [X] 429. N-ary Tree Level Order Traversal|Medium|BFS|||
+|- [] 430. Flatten a Multilevel Doubly Linked List|Medium||||
+|- [X] 434. Number of Segments in a String|Easy||||
 |- [X] 441. Arranging Coins|Easy||||
 |- [] 443. String Compression|Easy||||
 |- [X] 445. Add Two Numbers II|Medium|Stack|Recursive||
@@ -286,9 +298,11 @@
 |- [X] 463. Island Perimeter|Easy||||
 |- [X] 475. Heaters|Easy||||
 |- [X] 476. Number Complement|Easy||||
+|- [] 477. Total Hamming Distance|Medium||||
 |- [X] 482. License Key Formatting|Easy||||
 |- [X] 485. Max Consecutive Ones|Easy||||
-|- [] 490. The Maze|Medium|BFS|DFS||
+|- [X] 490. The Maze|Medium|BFS|DFS||
+|- [] 491. Increasing Subsequences|Medium|BFS|DFS||
 |- [] 498. Diagonal Travers|Medium||||
 |- [X] 500. Keyboard Row|Easy|Hashtable|||
 |- [X] 501. Find Mode in Binary Search Tree|Easy|Hashtable|||
@@ -336,9 +350,10 @@ Note:
 - [] Manacher’s Algorithm
 - [] Quick Select
 - [] Quick Sort
-- [] Difference between Backtracking and Depth First Search (DFS)
+- [] Backtracking and Depth First Search (DFS)
 - [] Greedy
 - [] Python Bit-manipulate
 - [] Newton Methods
 - [] negative number module and Complement
 - [] Morris Traversal
+- [] Deep Copy
