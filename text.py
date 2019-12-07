@@ -1,24 +1,23 @@
 class Solution:
-    def canCompleteCircuit(self, gas, cost):
-        return self.sol1(gas, cost)
+    def merge(self, intervals) :
+        return self.sol1(intervals)
 
     # Solution 1 :
-    def sol1(self, gas, cost) :
-        if len(gas) < 2 : return 0
-        tank = 0
-        for i in range(len(gas)) :
-            tank = gas[i] - cost[i]
-            idx = i + 1 
-            while idx != i :
-                if idx == len(gas) : idx = 0
-                if tank < 0 : break
-                else : tank += gas[idx] - cost[idx]
-                idx = idx + 1 
-            if tank >= 0 and idx == i : return idx        
-        return -1
+    def sol1(self, intervals) :
+        intervals = sorted(intervals, key = lambda x : x[0])
+        ans = []
+        temp = intervals[0][:]
+        for interval in intervals[1:] :
+            if temp[1] >= interval[0] : 
+                temp[1] = max(temp[1], interval[0])
+            else : 
+                ans.append(temp)
+                temp = interval[:]
+        ans.append(temp)
+        return ans
                 
 
 A = Solution()
-print(A.canCompleteCircuit([3,1,1],[1,2,2]))
+print(A.merge([[1,3],[2,6],[8,10],[15,18]]))
 
 

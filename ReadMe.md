@@ -52,10 +52,14 @@
 |- [X] 50. Pow(x, n)|Medium|Math|Binary-search||
 |- [X] 51. N Queens|Hard|Backtracking|||
 |- [X] 52. N Queens II|Hard|Backtracking|||
-|- [] 53. Maximum Subarray|Medium||||
+|- [X] 53. Maximum Subarray|Medium||||
+|- [X] 54. Spiral Matrix|Medium||||
 |- [X] 55. Jump Game|Medium|Greedy||||
-|- [] 58. Length of Last Word|Medium||||
-|- [] 59. Spiral Matrix II|Medium||||
+|- [X] 56. Merge Intervals|Medium|||||
+|- [X] 57. Insert Interval|Hard|||||
+|- [X] 58. Length of Last Word|Medium||||
+|- [X] 59. Spiral Matrix II|Medium||||
+|- [] 60. Permutation Sequence|Medium||||
 |- [X] 61. Rotated List|Medium|Linked List|||
 |- [X] 62. Unique Paths|Medium||||
 |- [X] 63. Unique Paths II|Medium||||

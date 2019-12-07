@@ -7,15 +7,21 @@
 # @lc code=start
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
-        nmin, nmax, start = 0, n - 1, 0
-        directtions = [[1, 0], [0, 1], [-1, 0], [0, -1]]
-        board = [[0 for i in range(n)] for j in range(n)]
-        x, y = 0, 0
-        for i in range(1, n * n + 1):
-            board[x][y] = i
-            if x >= nmin and 
-            d = directtions[start % 4]
-            x += 
+        seen = [[False] * n for _ in range(n)]
+        directions = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+        board = [[0] * n for _ in range(n)]
+        d, x, y = 0, 0, 0
+        for t in range(1, n * n + 1) :
+            board[x][y] = t
+            seen[x][y] = True
+            ix, iy = x + directions[d][0], y + directions[d][1]
+            if -1 < ix < n and -1 < iy < n and not seen[ix][iy] :
+                x, y = ix, iy
+            else :
+                d = (d + 1) % 4
+                x, y = x + directions[d][0], y + directions[d][1]
+        return board
+
 
 
         
