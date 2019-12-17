@@ -345,7 +345,11 @@
 |- [X] 684. Redundant Connection|Medium|Union-find Set|||
 |- [] 685. Redundant Connection II|Hard|Union-find Set|||
 |- [X] 737. Sentence Similarity II|Medium||Union-find Set|||
-
+|---|---|---|---|---|
+|- [X] 1290. Convert Binary Number in a Linked List to Integer|Easy||||
+|- [X] 1291. Sequential Digits|Medium||||
+|- [X] 1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold|Medium||||
+|- [X] 1293. Shortest Path in a Grid with Obstacles Elimination|Hard||||
 
 
 
