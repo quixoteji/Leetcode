@@ -14,6 +14,8 @@ class Solution:
             cnt *= 10
             start *= 10
         start += (n - 1) / l
+
+        return ord(str(start)[(n - 1) % l]) - ord('0')
         
 
         

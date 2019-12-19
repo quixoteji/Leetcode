@@ -275,10 +275,10 @@
 |- [X] 392. Is Subsequence|Easy||||
 |- [] 398. Random Pick Index|Medium||||
 |- [X] 399. Evaluate Division|Medium|Union-find Set|||
-|- [] 400. Nth Digit|Medium||||
+|- [X] 400. Nth Digit|Medium||||
 |- [X] 401. Binary Watch|Easy||||
 |- [X] 402. Remove K Digits|Medium||||
-|- [X] 403. Frog Jump|Medium||||
+|- [] 403. Frog Jump|Medium||||
 |- [] 404. Sum of Left Leaves|Easy||||
 |- [X] 405. Convert a Number to Hexadecimal|Easy||||
 |- [X] 408. Valid Word Abbreviation|Easy||||

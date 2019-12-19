@@ -7,7 +7,7 @@
 # @lc code=start
 class Solution:
     def canCross(self, stones: List[int]) -> bool:
-        return self.sol2(stones)
+        return self.dp1(stones)
 
     # Solution 1 : dfs (time limit exceeded)
     def sol1(self, stones) :
@@ -26,13 +26,20 @@ class Solution:
                 return True
         return False
 
-    # Solution 2 : iteration
-    def sol2(self, stones) :
-        return self.ddfs(stones, 0, 0)
-    def ddfs(self, stones, pos, k) :
-        for i in range(pos + 1, len(stones)):
-            gap = stones[i] - stones[pos]
-            if gap < k - 1 : continue
+    # Solution 2 : dp bottom up
+    def dp1(self, stones) :
+        hashtable = collections.defaultdict(set)
+        hashtable[0].add(0)
+        for i in range(len(stones)):
+            if stones[i] in hashtable :
+                for val in hashtable[stones[i]] :
+                    if val > 0 : hashtable[stones[i]+val].add(val)
+                    if val > 1 : hashtable[stones[i]+val-1].add(val-1)
+                    hashtable[stones[i]+val+1].add(val+1)
+        return stones[-1] in hashtable
+
+
+    
             
         
 

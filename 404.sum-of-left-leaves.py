@@ -15,7 +15,9 @@
 class Solution:
     def dfs(self, root, ans) :
         if not root : return 
-        if root.left : ans.append(root.left.val)
+        if root.left and not root.left.left and not root.left.right :
+            ans.append(root.left.val)
+            
         self.dfs(root.left, ans)
         self.dfs(root.right, ans)
         
