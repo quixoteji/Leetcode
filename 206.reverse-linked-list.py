@@ -22,16 +22,16 @@ class Solution:
         return prev
 
     def reverseList(self, head: ListNode) -> ListNode:
-        if not head or not head.next : return head
-        dummy = ListNode(0)
-        dummy.next = head
-        while head and head.next :
-            temp = head.next
-            head.next = temp.next
-            temp.next = dummy.next
-            dummy.next = temp
-        return dummy.next
-
+        # if not head or not head.next : return head
+        # dummy = ListNode(0)
+        # dummy.next = head
+        # while head and head.next :
+        #     temp = head.next
+        #     head.next = temp.next
+        #     temp.next = dummy.next
+        #     dummy.next = temp
+        # return dummy.next
+        return self.sol1(head)
         
 # @lc code=end
 

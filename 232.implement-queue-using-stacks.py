@@ -15,14 +15,17 @@ class MyQueue:
         # stack.append()
         # stack.pop()
 
-        # stack.insert(0, val)
-        # stack.pop(0)
 
     def push(self, x: int) -> None:
         """
         Push element x to the back of queue.
         """
-        self.stack.append(x)
+        swap = []
+        while self.stack :
+            swap.append(self.stack.pop())
+        swap.append(x)
+        while swap:
+            self.stack.append(swap.pop())
 
     def pop(self) -> int:
         """
@@ -35,13 +38,14 @@ class MyQueue:
         """
         Get the front element.
         """
+        return self.stack[-1]
         
 
     def empty(self) -> bool:
         """
         Returns whether the queue is empty.
         """
-        return self.stack is None
+        return self.stack == []
 
 
 # Your MyQueue object will be instantiated and called as such:

@@ -14,20 +14,19 @@
 class Solution:
     def isPalindrome(self, head: ListNode) -> bool:
         if not head : return True
-        dummy = ListNode(0)
-        dummy.next, k = head, 0
-        while head :
-            k, head = k + 1, head.next
-        slow, fast, k, i = dummy, dummy, (k + 1) // 2, 0
+        fast = slow = head
+        while fast.next and fast.next.next :
+            slow, fast = slow.next, fast.next.next
+        slow, fast, prev = head, slow.next, None
         while fast :
-            while i < k + 1 : fast, i = fast.next, i + 1
-            
-            if fast.val != slow.val : return False
-            fast, slow = fast.next, slow.next
+            temp = fast.next
+            fast.next = prev
+            fast, prev = temp, fast
+        while prev :
+            if prev.val == slow.val : prev, slow = prev.next, slow.next
+            else : return False
+        
         return True
-
-
-
         
 # @lc code=end
 
