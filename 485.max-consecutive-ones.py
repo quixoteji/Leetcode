@@ -7,19 +7,13 @@
 # @lc code=start
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
-        nums.insert(0,0)
-        nums.append(0)
-        i, j = 0, 0
-        ans = 0
-        while i < len(nums) and j < len(nums) :
-            if nums[j] == 1 :
-                while j + 1 < len(nums) and nums[j+1] == 1 : j += 1
-                ans = max(ans, j - i)
-                i = j
-            else :
-                i += 1
-            j += 1
-        return ans
+        record = ans = 0
+        for num in nums :
+            if num == 1 : record += 1
+            else : 
+                ans = max(ans, record)
+                record = 0
+        return max(ans, record)
         
 # @lc code=end
 

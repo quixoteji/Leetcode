@@ -7,9 +7,14 @@
 # @lc code=start
 class Solution:
     def constructRectangle(self, area: int) -> List[int]:
-        W, L = 1, area
-        while W <= L :
-            if 
+        res = []
+        w = 1
+        while w * w <= area :
+            if area % w == 0 : res.append([area // w, w])
+            w += 1
+        return res[-1]
+
+        
 
         
 # @lc code=end

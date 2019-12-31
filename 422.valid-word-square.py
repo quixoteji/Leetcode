@@ -7,16 +7,13 @@
 # @lc code=start
 class Solution:
     def validWordSquare(self, words: List[str]) -> bool:
-        if not words : return True
-        nums = [len(word) for word in words]
-        hashset = set(nums)
-        if len(hashset) != 1 or len(nums) != nums[0] : return False
-        for i in range(len(words)) :
-            s = ''
+        ref = []
+        for i in range(len(words)):
+            tmp = ''
             for word in words :
-                s += word[i]
-            if s != words[i] : return False
-        return True
-        
+                if i < len(word) : tmp += word[i]
+            ref.append(tmp)
+        return words == ref
+
 # @lc code=end
 

@@ -14,11 +14,10 @@
 class Solution:
     def oddEvenList(self, head: ListNode) -> ListNode:
         if not head or not head.next : return head
-        odd, even = head, head.next
-        while head and head.next :
-           odd, even = head, head.next
-           odd = even.next
-        odd.next = even.next
+        odd, even = ListNode(0), ListNode(0)
+        dummy = head
+        while dummy :
+            odd = dummy
         return head
             
         

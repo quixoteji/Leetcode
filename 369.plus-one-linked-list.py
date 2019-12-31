@@ -12,21 +12,27 @@
 #         self.next = None
 
 class Solution:
-    def reverse(self, head) :
-        prev, curr = None, head
-        while curr:
-            prev, curr.next, curr = curr, prev, curr.next
+    def reverse(self, node) :
+        prev, curr = None, node
+        while curr :
+            temp = curr.next
+            curr.next = prev
+            prev, curr = curr, temp
         return prev
+
     def plusOne(self, head: ListNode) -> ListNode:
         if not head : return head
-        dummy = head = self.reverse(head)
+        node = self.reverse(head)
+        prev = head = node
         carry = 1
-        while head :
-            head.val = (head.val + carry) % 10
-            carry = (head.val + carry) // 10
-            head = head.next
-        if carry : head = 
-        return self.reverse(dummy)
+        while node :
+            prev = node
+            carry, val = divmod(node.val + carry, 10)    
+            node.val = val
+            if carry == 0 : break
+            node = node.next
+        if carry : prev.next = ListNode(1)
+        return self.reverse(head)
         
 # @lc code=end
 

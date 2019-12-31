@@ -50,6 +50,50 @@
 
 class Solution:
     def depthSum(self, nestedList: List[NestedInteger]) -> int:
-        
+        return self.sol3(nestedList)
+
+    # Solution 1 : dfs
+    def sol1(self, nestedList) :
+        return self.dfs(nestedList, 1)
+
+    def dfs(self, nestedList, level) :
+        sum = 0
+        for n in nestedList :
+            if n.isInteger() : sum += n.getInteger() * level
+            else : sum += self.dfs(n.getList(), level + 1)
+        return sum
+
+    # Solution 2 : bfs
+    def sol2(self, nestedList) :
+        stack = []
+        level = 1
+        ans = 0
+        stack.append(nestedList)
+        while stack :
+            print('level : ' + str(level))
+            l = len(stack)
+            for i in range(l) :
+                nl = stack.pop()
+                for n in nl :
+                    if n.isInteger() : 
+                        print(n.getInteger())
+                        ans += level * n.getInteger()
+                    else : stack.append(n.getList())
+            level += 1
+        return ans
+
+    # # Solution 3 : 
+    # [[[[55]]],[[31]],[99],[],75]
+    def sol3(self, nestedList) :
+        if not nestedList:
+            return 0
+        depth = 1
+        res = sum([x.getInteger() for x in nestedList if x.isInteger()])*depth
+        nestedList = [l for x in nestedList for l in x.getList() if not x.isInteger()]
+        while nestedList:
+            depth += 1
+            res += sum([x.getInteger() for x in nestedList if x.isInteger()])*depth
+            nestedList = [l for x in nestedList for l in x.getList() if not x.isInteger()]
+        return res
 # @lc code=end
 

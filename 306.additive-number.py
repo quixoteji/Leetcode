@@ -1,13 +1,18 @@
+#
+# @lc app=leetcode id=306 lang=python3
+#
+# [306] Additive Number
+#
+
+# @lc code=start
 class Solution:
     def isAdditiveNumber(self, num: str) -> bool:
         return self.sol1(num)
 
     # Solution 1 :
     def sol1(self, num) :
-        for i in range(1, len(num) // 2) :
-            # if num[i] == 0 and i > 1 : continue
+        for i in range(1, len(num) // 2 + 1) :
             for j in range(i + 1, len(num)) :
-                # if num[j] == '0' and j - i > 1 : continue
                 if self.dfs(num, 0 , i, j) : return True
         return False
 
@@ -20,5 +25,9 @@ class Solution:
         if k + len(addition) == len(num) : return True
         return self.dfs(num, j, k, k + len(addition))
 
-A = Solution()
-print(A.isAdditiveNumber("12012122436"))
+
+
+
+        
+# @lc code=end
+

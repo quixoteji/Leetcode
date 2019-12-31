@@ -7,27 +7,17 @@
 # @lc code=start
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        if len(chars) < 2 : return len(chars)
-        p1, p2, num = 0, 1, 1
-        while p2 < len(chars) :
-            if chars[p2] == chars[p1] :
-                num += 1
-            else :
-                if num > 1 : 
-                    p1 += 1
-                    nums = list(str(num))
-                    for num in nums :
-                        chars[p1] = num
-                        p1 += 1
-                num = 1
-            p2 += 1
-        if num > 1 : 
-            p1 += 1
-            nums = list(str(num))
-            for num in nums :
-                chars[p1] = num
-                p1 += 1
-        return p1
+        anchor = write = 0
+        for read, c in enumerate(chars):
+            if read + 1 == len(chars) or chars[read + 1] != c:
+                chars[write] = chars[anchor]
+                write += 1
+                if read > anchor:
+                    for digit in str(read - anchor + 1):
+                        chars[write] = digit
+                        write += 1
+                anchor = read + 1
+        return write
 
         
 # @lc code=end
