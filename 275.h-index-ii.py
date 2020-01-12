@@ -7,14 +7,10 @@
 # @lc code=start
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
-        l, r = 0, len(citations) - 1
-        while l <= r :
-            m = l + (r - l) // 2
-            if citations[m] >= m :
-                l = m
-            else :
-                r = m - 1
-        return l+1
+        return self.sol1(citations)
+
+    def sol1(self, citations) :
+        
 
 # @lc code=end
 

@@ -10,9 +10,10 @@ class Solution:
         if not nums: return []
         ranks = []
         ans = ['' for _ in range(len(nums))]
-        for i, v in enumerate(nums) :
-            ranks.append([i, v])
+        for i, v in enumerate(nums) : ranks.append([i, v])
+        print(ranks)
         ranks = sorted(ranks, key = lambda x : x[1])
+        print(ranks)
         for i in range(len(ranks)) :
             ans[ranks[i][0]] = str(ranks[i][1] + 1)
         for s in ans :

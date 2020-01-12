@@ -13,13 +13,27 @@
 
 class Solution:
     def partition(self, head: ListNode, x: int) -> ListNode:
+        return self.sol1(head, x)
+
+    def sol1(self, head, x) :
         if not head or not head.next : return head
-        prev = dummy = ListNode(-1)
-        dummy.next = head
-        newhead = ListNode(-1)
-        while prev.next :
-            if prev.next >= x :
-                prev.next 
+        dummy, temp = ListNode(0), ListNode(0)
+        second = temp
+        prev, curr = dummy, head
+        while curr :
+            next = curr.next
+            curr.next = None
+            if curr.val < x : 
+                prev.next = curr
+                prev = prev.next
+            else :
+                temp.next = curr
+                temp = temp.next
+            curr = next
+        prev.next = second.next
+        return dummy.next
+        
+        
         
 # @lc code=end
 

@@ -1,24 +1,31 @@
+import collections
+
 class Solution:
-    def isAdditiveNumber(self, num: str) -> bool:
-        return self.sol1(num)
+    def minWindow(self, s, t):
+        return self.sol2(s, t)
 
-    # Solution 1 :
-    def sol1(self, num) :
-        for i in range(1, len(num) // 2) :
-            # if num[i] == 0 and i > 1 : continue
-            for j in range(i + 1, len(num)) :
-                # if num[j] == '0' and j - i > 1 : continue
-                if self.dfs(num, 0 , i, j) : return True
-        return False
+    # Solution 2 : sliding window(incorrect)
+    def sol2(self, s, t) :
+        if not s or not t: return ''
+        hashmap = collections.defaultdict(int)
+        for char in t : hashmap[char] += 1
+        left = 0
+        cnt, minLen, ans = 0, float('inf'), ''
+        for i in range(len(s)) :
+            if s[i] in hashmap :
+                if hashmap[s[i]] > 0 : cnt += 1
+                hashmap[s[i]] -= 1
+            while cnt == len(t) :
+                if i - left + 1 < minLen : 
+                    minLen = i - left + 1
+                    ans = s[left : i + 1]
+                if s[left] in hashmap :
+                    if hashmap[s[left]] > 0 : cnt -= 1
+                    hashmap[s[left]] += 1
+                left += 1
+        return ans
 
-    def dfs(self, num, i, j, k) :
-        num1 = int(num[i : j])
-        num2 = int(num[j : k])
-        if str(num1) != num[i:j] or str(num2) != num[j:k] : return False
-        addition = str(num1 + num2)
-        if not num[k : ].startswith(addition) : return False
-        if k + len(addition) == len(num) : return True
-        return self.dfs(num, j, k, k + len(addition))
 
 A = Solution()
-print(A.isAdditiveNumber("12012122436"))
+print(A.minWindow("bba", "ab"))
+
