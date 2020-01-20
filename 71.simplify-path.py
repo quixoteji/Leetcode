@@ -7,22 +7,17 @@
 # @lc code=start
 class Solution:
     def simplifyPath(self, path: str) -> str:
-        s = []
-        start = 0
-        for i in range(len(path)) :
-            if i == len(path) or path[i] == '/' :
-                p = path[start : i - start]
-                if p == '/' : continue
-                if p == '..' :
-                    if s : 
-                        s.pop()
-                    elif  len(p) > 0 and p != '.' :
-                        s.append(p)
-                start = i + 1
-        
-        ans = ''
-        for i in range(len(s)) :
-            ans += '/' + s[i]
-        return "/" if not ans else ans
+        s = [x for x in path.split('/') if x]
+        ans = []
+        for item in s :
+            if item == '.' : continue
+            elif item == '..' :
+                if len(ans) > 0 : ans.pop()
+                else : continue
+            else :
+                ans.append(item)
+        if len(ans) == 0 : res = '/'
+        else : res = '/' + '/'.join(ans)
+        return res
 # @lc code=end
 

@@ -7,24 +7,33 @@
 # @lc code=start
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
-        if len(points) < 2: return len(points)
-        htable = collections.defaultdict(set)
-        for i in range(len(points)) :
-            for j in range(i + 1, len(points)) :
-                x1, y1 = points[i]
-                x2, y2 = points[j]
-                if x1 - x2 == 0 : 
-                    a = float('inf')
-                    b = x1
-                else :
-                    a = (y1 - y2) / (x1 - x2)
-                    b = y1 - a * x1
-                htable[(a, b)].add((x1, y1))
-                htable[(a, b)].add((x2, y2))
-        maxVal = 0
-        for value in htable.values():
-            maxVal = max(maxVal, len(value))
-        return maxVal
+        if len(points) < 3 : return len(points)
+        max_count = 1
+        for point in points :
+            max_count = max(self.points_on_line(point, points), max_count)
+        return max_count
+
+    def points_on_line(self, point, points) :
+        duplicate = 0
+        vertical = 0
+        horizontal = 0
+        slope = collections.defaultdict(int)
+        for p in points :
+            if p[0] == point[0] and p[1] == point[1] :
+                duplicate += 1
+            elif p[0] == point[0] : 
+                horizontal += 1
+            elif p[1] == point[1] :
+                vertical += 1
+            else :
+                s = (p[0] - point[0]) / (p[1] - point[1])
+                slope[s] += 1
+        max_slope = max(slope.values()) if slope.values() else 0
+        max_count = max(horizontal, vertical, max_slope)
+        return max_count + duplicate
+            
+
+        
 
         
 # @lc code=end

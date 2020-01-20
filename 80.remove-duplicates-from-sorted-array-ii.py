@@ -7,17 +7,29 @@
 # @lc code=start
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        return self.sol1(nums)
-
+        return self.sol2(nums)
+    # Solution 1
     def sol1(self, nums):
-        if len(nums) < 2: return 0
-        p1, p2 = 0, 1
-        while p1 < len(nums) and p2 < len(nums) :
-            if nums[p1] != nums[p2] : 
-                p1 += 1
-                nums[p1], nums[p2] = nums[p2], nums[p1]
-            p2 += 1
-        return p1
+        if len(nums) < 3: return len(nums)
+        prev, curr, cnt = 0, 1, 1
+        while curr < len(nums) :
+            if nums[curr] == nums[prev] and cnt == 0 : curr += 1
+            else :
+                if nums[curr] == nums[prev] : cnt -= 1
+                else : cnt = 1
+                prev += 1
+                nums[prev] = nums[curr]
+                curr += 1
+        return prev + 1
+
+    # Solution 2 :
+    def sol2(self, nums) :
+        idx = 0
+        for num in nums :
+            if idx < 2 or num > nums[idx - 2] :
+                nums[idx] = num
+                idx += 1
+        return idx              
 
         
 # @lc code=end

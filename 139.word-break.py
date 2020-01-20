@@ -20,7 +20,6 @@ class Solution:
         return False
 
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        # self._wordDict = set(wordDict)
         return self.canBreak(s, {}, set(wordDict))
 
 # @lc code=end

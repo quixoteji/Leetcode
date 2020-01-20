@@ -18,9 +18,21 @@ class Solution:
     
     # Solution 1 : dfs
     def sol1(self, root) :
-        if not root : return None
+        if not root : return []
         ans = []
-        self.dfs(root, ans)
+        self.subtrees(ans, root)
+        counter = collections.Counter(ans)
+        ans = collections.defaultdict(list)
+        for val in counter : ans[counter[val]].append(val)
+        print(ans)
+        return ans[max(ans.keys())]
+
+    def subtrees(self, ans, root) :
+        if not root : return 0
+        val = self.subtrees(ans, root.left) + self.subtrees(ans, root.right) + root.val
+        ans.append(val)
+        return val
+
 
 # @lc code=end
 

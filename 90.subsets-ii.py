@@ -11,17 +11,30 @@ class Solution:
 
     def sol1(self, nums) :
         nums.sort()
+        res = []
+        visited = set()
+        self.dfs(res, [], len(nums))
+        # print(res)
         ans = []
-        queue = []
-
-        for i in range(len(nums) + 1) :
-            if i == 0 :
-                queue.append([])
-                ans.append([])
+        for idx in res :
+            temp = []
+            for i in range(len(idx)) :
+                if idx[i] : temp.append(nums[i])
+            if tuple(temp[:]) in visited : continue
             else :
+                visited.add(tuple(temp[:]))
+                ans.append(temp[:])
+        return ans
+
+    def dfs(self, res, curr, k) :
+        if k == len(curr) :
+            res.append(curr[:])
+            return
+        for i in [0, 1] :
+            curr.append(i)
+            self.dfs(res, curr, k)
+            curr.pop()
                  
 
-        
-        
 # @lc code=end
 

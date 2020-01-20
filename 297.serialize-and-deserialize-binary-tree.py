@@ -20,7 +20,12 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        s1 = 
+        ans = list()
+        ans += str(self.write(root)
+        if not root : return
+        ans += self.serialize(root.left) + self.serialize(root.right)
+        return ans
+
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.

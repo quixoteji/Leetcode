@@ -15,11 +15,16 @@ class Solution:
     def insertionSortList(self, head: ListNode) -> ListNode:
         if not head or not head.next : return head
         dummy = ListNode(0)
-        prev, dummy.next = head, head
+        curr = dummy
         while head :
-            _next = head.next
-            temp = dummy.next
-            if head.val < temp.val :
+            temp = head.next
+            curr = dummy
+            while curr.next and curr.next.val <= head.val : curr = curr.next
+            head.next = curr.next
+            curr.next = head
+            head = temp
+        return dummy.next
+        
 
         
 # @lc code=end

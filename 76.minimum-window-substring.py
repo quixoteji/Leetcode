@@ -26,26 +26,27 @@ class Solution:
                 if flag : return ss
         return ''
 
-    # Solution 2 : sliding window(incorrect)
+    # Solution 2 : sliding window
     def sol2(self, s, t) :
-        hashmap = collections.defaultdict(int)
-        for char in t : hashmap[char] += 1
-        left = 0
-        cnt, minLen, ans = 0, float('inf'), ''
-        for i in range(len(s)) :
-            if s[i] in hashmap :
-                if hashmap[s[i]] > 0 : cnt += 1
-                hashmap[s[i]] -= 1
-            while cnt == len(t) :
-                if i - left + 1 < minLen : 
-                    minLen = i - left + 1
-                    ans = s[left : i + 1]
-                if s[left] in hashmap :
-                    if hashmap[s[left]] <= 0 : cnt -= 1
-                    hashmap[s[left]] += 1
+        if not s or not t : return ''
+        ans, minLen = '', len(s) + 1
+        tDict = collections.defaultdict(int)
+        for char in t : tDict[char] += 1
+        left, tLen = 0, len(t)
+        for right in range(len(s)) :
+            char = s[right]
+            tDict[char] -= 1
+            if tDict[char] >= 0 : 
+                tLen -= 1
+            while tLen == 0 :
+                if len(s[left : right + 1]) < minLen :
+                    minLen = len(s[left : right + 1])
+                    ans = s[left : right + 1]
+                tDict[s[left]] += 1
+                if tDict[s[left]] > 0 :
+                    tLen += 1
                 left += 1
         return ans
-                
 
 
 # @lc code=end

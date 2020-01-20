@@ -18,10 +18,15 @@ class Solution:
     def sol1(self, head, m, n) :
         dummy = ListNode(0)
         dummy.next = head
-        k = 0
-        mnode,
-        while dummy :
-            if k == m - 1 : 
+        prev = dummy
+        for i in range(m-1) : prev = prev.next
+        curr = prev.next
+        for i in range(m, n) :
+            temp = curr.next
+            curr.next = temp.next
+            temp.next = prev.next
+            prev.next = temp
+        return dummy.next
         
 # @lc code=end
 
