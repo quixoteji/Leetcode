@@ -6,27 +6,19 @@
 
 # @lc code=start
 class Solution:
-    # backtrack
-    def dfs(self, n, start, curr, ans) :
-        if (n == 1) : 
-            if len(curr) > 1 : 
-                print(curr)
-                ans.append(curr[:])
-                return 
-        for i in range(start, n) :
-            if n % i == 0 :
-                curr.append(i)
-                self.dfs(n // i, i, curr, ans)
-                curr.pop()
-        return
-    def sol1(self, n) :
-        res = []
-        curr = []
-        self.dfs(n,  2, curr, res) 
-        return res
-
     def getFactors(self, n: int) -> List[List[int]]:
         return self.sol1(n)
+
+    def sol1(self, n) : 
+        def dfs(n, i, curr, ans) :
+            while i * i <= n :
+                if n % i == 0 :
+                    ans.append(curr + [i, n//i])
+                    dfs(n//i, i, curr + [i], ans)
+                i += 1
+            return ans
+        return dfs(n, 2, [], [])
+
 
         
 # @lc code=end

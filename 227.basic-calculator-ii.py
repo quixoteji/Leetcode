@@ -7,25 +7,31 @@
 # @lc code=start
 class Solution:
     def calculate(self, s: str) -> int:
-        return self.sol1(s)
+        return self.sol2(s)
 
     def sol1(self, s) :
-        numStack, opStack = [], []
-        flag = 0
-        for i in range(len(s)) :
-            if s[i].isspace() : 
-                flag = 0
-                continue
-            elif s[i].isdigit() : 
-                if flag : numStack[-1] = numStack[-1] + s[i]
-                else : 
-                    numStack.append(s[i])
-                    flag = 1
-            else :
-                if s[i] in {'+', '-'} : opStack.append(s[i])
-                else :
+        num, sign, stack = 0, '+', []
+        for i in range(len(s)) : 
+            char = s[i]
+            if char.isdigit() : 
+                num = num * 10 + int(char)
+            if char in ['+', '-', '*', '/'] or i == len(s) - 1 :
+                if sign == '+' :
+                    stack.append(num)
+                if sign == '-' :
+                    stack.append(-num)
+                if sign == '*' :
+                    stack.append(stack.pop() * num)
+                if sign == '/' :
+                    sign = 1 if stack[-1] > 0 else -1
+                    stack.append(abs(stack.pop()) // num * sign)
+                num = 0
+                sign = char
+        return sum(stack)
                     
-                flag = 0
+
+            
+
         
 # @lc code=end
 

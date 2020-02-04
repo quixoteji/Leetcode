@@ -20,11 +20,14 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        ans = list()
-        ans += str(self.write(root)
-        if not root : return
-        ans += self.serialize(root.left) + self.serialize(root.right)
+        ans = self.rserialize(root, '')
+        print(ans)
         return ans
+
+    def rserialize(self, root, s) :
+        if not root : s += '*'
+        else : s += str(root.val) + ',' + self.rserialize(root.left, s) + ',' + self.rserialize(root.right, s)
+        return s
 
 
     def deserialize(self, data):
@@ -33,7 +36,17 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        
+        return self.rdeserialize(data.split(','))
+
+    def rdeserialize(self, data) :
+        if data[0] == '*' : 
+            data.pop(0)
+            return None
+        root = TreeNode(int(data[0]))
+        data.pop(0)
+        root.left = self.rdeserialize(data)
+        root.right = self.rdeserialize(data)
+        return root
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

@@ -24,13 +24,17 @@ class NumArray:
 
     # Solution 2 : Segment Tree
     def __init__(self, nums: List[int]):
-        self.st = SegmentTree(nums)
+        self._nums = nums
+        self.tree = FenwickTree(nums)
+        for i in range(len(nums)) :
+            self.tree.update(i + 1, nums[i])
 
     def update(self, i: int, val: int) -> None:
-        self.st.update(i,val)
+        self.tree.update(i + 1, val - self._nums[i])
+        self._nums[i] = val
 
     def sumRange(self, i: int, j: int) -> int:
-        return self.st.get_sum_in_range(i,j)    
+        return self.tree.query(j + 1) - self.tree.query(i)
 
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
@@ -83,5 +87,24 @@ class SegmentTree :
                     node.right, node.right.rangeStart if start < node.right.rangeStart else start, end)
             return sumV
             
+
+
+class FenwickTree :
+    def __init__(self, nums) :
+        self._sum = [0 for _ in range(len(nums) + 1)]
+        self.lowbit = lambda x : x & -x
+
+    def update(self, i, value) :
+        while i < len(self._sum) :
+            self._sum[i] += value
+            i += self.lowbit(i)
+
+    def query(self, i) :
+        ans = 0 
+        while i > 0 :
+            ans += self._sum[i]
+            i -= self.lowbit(i)
+        return ans
+
 # @lc code=end
 

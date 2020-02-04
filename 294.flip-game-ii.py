@@ -11,7 +11,14 @@ class Solution:
 
     # Solution 1 :
     def sol1(self, s) :
-        
-        
+        return self.canWin(s)
+
+    def canWin(self, s) :
+        for i in range(1, len(s)) :
+            if s[i] == s[i - 1] == '+' and not self.canWin(s[:i - 1] + '--' + s[i + 1 :]) :
+                return True
+        return False
+
+
 # @lc code=end
 
