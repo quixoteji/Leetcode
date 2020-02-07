@@ -8,17 +8,13 @@
 class ValidWordAbbr:
 
     def __init__(self, dictionary: List[str]):
-        self._dict = set()
-        for word in dictionary : self._dict.add(self.abbr(word))
-            
+        self.d = collections.defaultdict(set)
+        for word in dictionary:
+            if len(word) >=2: self.d[(word[0]+word[-1],len(word))].add(word)
 
-    def abbr(self, word) :
-        if len(word) < 3 : return word
-        else : return word[0] + str(len(word)-2) + word[-1]
-
-
+        
     def isUnique(self, word: str) -> bool:
-        return self.abbr(word) not in self._dict
+        return False if len(word) > 2 and (len(self.d[(word[0]+word[-1],len(word))]) > 1 or(len(self.d[(word[0]+word[-1],len(word))]) == 1 and word not in self.d[(word[0]+word[-1],len(word))])) else True
         
 
 

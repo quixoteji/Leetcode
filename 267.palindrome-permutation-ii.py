@@ -6,22 +6,28 @@
 
 # @lc code=start
 class Solution:
-    def dfs(self, ans, curr, even, odd) :
-
-        
-
-
     def generatePalindromes(self, s: str) -> List[str]:
+        return self.sol1(s)
+
+    def sol1(self, s) :
+        counter = collections.Counter(s)
+        odd = [char for (char, times) in counter.items() if times % 2 == 1]
         ans = []
-        even, odd = '', ''
-        hashtable = collections.Counter(s)
-        for key in hashtable:
-            if hashtable[key] // 2 == 0 : even += key
-            else : odd += key
-        if len(odd) > 1 :
-            return ans
-        self.dfs(ans, curr, even, odd, hashtable)
+        if len(odd) > 1 : return ans
+        curr = odd[0] if odd else ''
+        self.dfs(curr, counter, len(s), ans)
         return ans
+        
+    def dfs(self, curr, counter, n, ans):
+        if len(curr) == n : 
+            ans.append(curr)
+            return 
+        for char, times in counter.items() :
+            if times >= 2 :
+                counter[char] -= 2
+                self.dfs(char + curr + char, counter, n, ans)
+                counter[char] += 2
+            
 
         
 # @lc code=end

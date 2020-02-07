@@ -7,20 +7,16 @@
 # @lc code=start
 class ZigzagIterator:
     def __init__(self, v1: List[int], v2: List[int]):
-        self.next = 1
-        self.va = v1
-        self.vb = v2
+        self.data = [(len(v), iter(v)) for v in (v1, v2) if v]
 
     def next(self) -> int:
-        num = self.va.pop(0) if self.next > 0 else self.vb.pop(0)
-        if self.va and self.vb : self.next *= -1
-        elif not self.va : self.next = -1
-        elif not self.vb : self.next = 1
-        return num
+        len, iter = self.data.pop(0)
+        if len > 1:
+            self.data.append((len-1, iter))
+        return next(iter)
         
-
     def hasNext(self) -> bool:
-        return self.va and self.vb
+        return bool(self.data)
         
         
 
