@@ -7,18 +7,29 @@
 # @lc code=start
 class Solution:
     def find132pattern(self, nums: List[int]) -> bool:
-        return self.sol1(nums)
+        return self.sol2(nums)
 
     def sol1(self, nums) :
-        start, end = 0, len(nums) - 1
-        while start < end :
-            if nums[start] < nums[end] :
-                for num in nums[start : end + 1] :
-                    if num > nums[end] : return True
-                start += 1
-            else : 
-                end -= 1
+        if not nums : return False
+        for i in range(len(nums)) :
+            for j in range(i + 1, len(nums)):
+                    for k in range(j + 1, len(nums)) :
+                        if nums[i] < nums[k] < nums[j]:
+                            return True
         return False
+
+    def sol2(self, nums) :
+        deq = collections.deque()
+        num2 = None
+        
+        for n in nums[::-1]:
+            if num2 is not None and n < num2:
+                return True
+            while deq and deq[-1] < n:
+                num2 = deq.pop()
+            deq.append(n)
+        return False
+                
         
 # @lc code=end
 

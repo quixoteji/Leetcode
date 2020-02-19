@@ -12,6 +12,7 @@ class Solution:
 
     def sol1(self, nums1, nums2, k) :
         nums = self.merge(nums1, nums2)
+        print(nums)
         return self.cut(nums, k)
 
     def merge(self, nums1, nums2):
@@ -28,7 +29,12 @@ class Solution:
             if not stack or num <= stack[-1] : 
                 stack.append(num)
             else :
-                
+                while num > stack[-1] and pop > 0 :
+                    stack.pop()
+                    pop -= 1
+                stack.append(num)
+        return stack
+
 
 # @lc code=end
 

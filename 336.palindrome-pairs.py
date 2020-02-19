@@ -5,52 +5,58 @@
 #
 
 # @lc code=start
-class Node :
-    def __init__(self) :
-        self.children = collections.defaultdict(Node)
-        self.isword = -1
-
-class Trie :
-    def __init__(self) :
-        self.root = Node()
-    def add(self, word, val) :
-        curr = self.root
-        for char in word :
-            curr = curr.children[char]
-        curr.isword = val
-    def search(self, word) :
-        curr = self.root
-        for char in word :
-            curr = curr.children.get(char)
-            if not curr : return -1
-        return curr.isword
-
 class Solution:
-    def brute_force(self, words) :
+    def palindromePairs(self, words: List[str]) -> List[List[int]]:
+        return self.sol2(words)
+
+    # Solution 1 : brutal force
+    def sol1(self, words) :
         ans = []
         for i in range(len(words)) :
             for j in range(len(words)) :
                 if i != j :
                     s = words[i] + words[j]
-                    if s == s[::-1] :
-                        ans.append([i,j])
+                    if s == s[::-1] : ans.append([i, j])
         return ans
 
-    def palindromePairs(self, words: List[str]) -> List[List[int]]:
-        T = Trie()
-        for i, word in enumerate(words):
-            T.add(word[::-1], i)
+    # Solution 2 :
+    def sol2(self, words) :
+
+        def prefixes(word) :
+            ans = []
+            for i in range(len(word)) :
+                if word[i:] == word[i:][::-1] :
+                    ans.append(word[:i])
+            return ans
+
+        def suffixes(word) :
+            ans = []
+            for i in range(len(word)) :
+                if word[:i+1] == word[:i+1][::-1] :
+                    ans.append(word[i+1:]) 
+            return ans
+
+        word_lookup = {word : i for i, word in enumerate(words)}
         ans = []
-        for i, word in enumerate(words):
-            for idx in range(len(word)) :
-                rw, lw = word[:idx], word[idx:]
-                if rw == rw[::-1] and T.search(lw) != -1 and idx != T.search(lw): 
-                    ans.append([idx, T.search(lw)])
-                if lw == lw[::-1] and T.search(rw) != -1 and idx != T.search(rw): 
-                    ans.append([idx, T.search(rw)])
+
+        for idx, word in enumerate(words):
+            reverse = word[::-1]
+            
+            if reverse in word_lookup and idx != word_lookup[reverse] :
+                ans.append([idx, word_lookup[reverse]])
+
+            for s in suffixes(word) :
+                rs = s[::-1]
+                if rs in word_lookup :
+                    ans.append([word_lookup[rs], idx])
+            
+            for p in prefixes(word) :
+                rp = p[::-1]
+                if rp in word_lookup :
+                    ans.append([idx, word_lookup[rp]])
+
         return ans
 
-        
         
 # @lc code=end
 

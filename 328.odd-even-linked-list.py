@@ -13,12 +13,25 @@
 
 class Solution:
     def oddEvenList(self, head: ListNode) -> ListNode:
+        return self.sol1(head)
+
+    def sol1(self, head) :
         if not head or not head.next : return head
-        odd, even = ListNode(0), ListNode(0)
-        dummy = head
-        while dummy :
-            odd = dummy
-        return head
+        dummy1, dummy2 = ListNode(0), ListNode(0)
+        odd, even = dummy1, dummy2
+
+        while head :
+            odd.next = head
+            odd, head = odd.next, head.next, 
+            if head : 
+                even.next = head
+                even, head = even.next, head.next
+        
+        odd.next = dummy2.next
+        even.next = None
+        return dummy1.next
+            
+
             
         
 # @lc code=end

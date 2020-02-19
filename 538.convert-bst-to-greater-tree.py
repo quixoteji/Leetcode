@@ -13,15 +13,36 @@
 #         self.right = None
 
 class Solution:
-    def dfs(self, root, num) :
-        if not root : return 0
-        root.left.val += root.val + self.dfs(root.right, root.val)
-        root.val += 
-         
+    ans = 0
     def convertBST(self, root: TreeNode) -> TreeNode:
-        if not root : return root
-        self.dfs(root, 0)
+        return self.recursion(root)
+
+    def recursion(self, root) :
+        if root :
+            self.recursion(root.right)
+            self.ans += root.val
+            root.val = self.ans
+            self.convertBST(root.left)
         return root
+
+    def iteration(self, root) :
+        total = 0
+        node = root
+        stack = []
+        while stack or node :
+            while node :
+                stack.append(node)
+                node = node.right
+            node = stack.pop()
+            total += node.val
+            node.val = total
+            node = node.left
+        return root
+
+        
+
+        
+        
         
 # @lc code=end
 

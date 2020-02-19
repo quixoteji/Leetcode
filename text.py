@@ -1,29 +1,42 @@
 import collections
 import math
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 class Solution:
-    def solve(self, m, n, positions) :
-        if not m or not n : return 0
-        sea = [[0 for _ in range(n)] for _ in range(m)]
-        for pos in positions :
-            sea[pos[0]][pos[1]] = 1
+    def str2tree(self, s) :
+        return self.sol1(s)
 
-        ans = 0
-        for i in range(m) :
-            for j in range(n) :
-                if sea[i][j] == 1 : 
-                    ans += 1
-                    self.dfs(sea, i, j)
-        return ans
+    def sol1(self, s):
+        if not s : return None
+        if '(' not in s :
+            root = None if s == '-' else TreeNode(int(s))
+        else :
+            idx = s.find('(')
+            root = self.sol1(s[: idx])
+            l, r, i = 1, 0, idx + 1
+            while i < len(s) :
+                if s[i] == '(' : l += 1
+                elif s[i] == ')' : r += 1
+                if l == r : break
+                i += 1
+            root.left = self.sol1(s[idx + 1 : i]) 
+            root.right = self.sol1(s[i + 1 :]) 
+        return root
 
-    def dfs(self, sea, i, j):
-        m, n = len(sea), len(sea[0])
-        sea[i][j] = 0
-        d = [1, 0, -1, 0, 1]
-        for x in range(4) :
-            dx, dy = i + d[x], j + d[x + 1]
-            if 0 <= dx < m and 0 <= dy < n and sea[dx][dy]:
-                self.dfs(sea, dx, dy)
-            
+
 A = Solution()
-print(A.solve(3,3,[[0,0],[0,1],[1,2],[2,1]]))
+z = A.str2tree("4(2(3)(1))(6(5))")
+print(A.str2tree("4(2(3)(1))(6(5))"))
+
+
+
