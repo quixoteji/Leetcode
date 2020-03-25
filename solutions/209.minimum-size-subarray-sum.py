@@ -20,15 +20,17 @@ class Solution:
         return minLen
     # Solution 2 : two pointers
     def sol2(self, s, nums) :
-        p1, p2 = 0, len(nums)
-        while p1 <= p2 :
-            if sum(nums[p1 : p2]) >= s : 
-                if nums[p1] > nums[p2 - 1] : p1 += 1
-                else : p2 -= 1
-            else :
-                break
-        print(p1, p2)
-        return p2 - p1
+        if not nums : return 0
+        minLen, start, curr = len(nums) + 1, 0, 0
+        for i, num in enumerate(nums) : 
+            curr += num
+            while curr >= s :
+                minLen = min(minLen, i - start + 1)
+                curr -= nums[start]
+                start += 1
+        return minLen if minLen <= len(nums) else 0
+
+
     def minSubArrayLen(self, s: int, nums: List[int]) -> int:
         return self.sol2(s, nums)
 
