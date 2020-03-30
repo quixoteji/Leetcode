@@ -147,3 +147,12 @@ def split(root, key) :
         root.left = bns[1]
         return [bns[0], root]
 ```
+
+## 03 Balanced Binary Tree
+
+- AVL Tree
+- Red Black Tree
+    - Root is Black
+    - Any leaf node is black nil (no data in leaf node)
+    - Connect nodes cannot all be red
+    - Any node to its children leaf node has same balck nodes
