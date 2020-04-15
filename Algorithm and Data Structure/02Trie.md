@@ -30,5 +30,4 @@ class Trie :
             curr = curr.children.get(char)
             if not curr : return False
         return True
-
 ```
